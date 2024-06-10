@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Crear.CrearBaciloscopia"
+             Title="CrearBaciloscopia">
+    <ScrollView>
+        <Grid ColumnDefinitions="*,*" Margin="0, 20, 0, 0">
+            <Label Text="Crear Baciloscopia" FontSize="24" HorizontalOptions="Center" Grid.ColumnSpan="2" FontFamily="Arial"/>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="280, -200, 0, 0">
+                <!-- Fila 1 -->
+                <StackLayout Orientation="Vertical" Margin="0, 0, 0, 0">
+                    <Label Text="Fecha de Atención" FontSize="20" />
+                    <DatePicker MinimumDate="{Binding MinDate}"
+                                MaximumDate="{Binding MaxDate}"
+                                Date="{Binding SelectedDate}" />
+                    <Label Text="Primer Cultivo" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Tercer Cultivo" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Quinto Cultivo" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                </StackLayout>
+                <!-- Fila 2 -->
+                <StackLayout Orientation="Vertical" Margin="50, 0, 0, 0">
+                    <Label Text="Aumento de Dosis" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>+1</x:String>
+                                <x:String>-</x:String>
+                                <x:String>F</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Segunda Baciloscopia" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Cuarta Baciloscopia" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Genexpert al quinto Mes" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                </StackLayout>
+                <!-- Fila 3 -->
+                <StackLayout Orientation="Vertical" Margin="50, 0, 0, 0">
+                    <Label Text="Cantidad de Dosis" FontSize="20" />
+
+                    <Entry Text="1" />
+
+                    <Label Text="Segundo Cultivo" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Cuarto Cultivo" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Sexta Baciloscopia" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                </StackLayout>
+                <!-- Fila 4 -->
+                <StackLayout Orientation="Vertical" Margin="50, 0, 0, 0">
+                    <Label Text="Primera Baciloscopia" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Tercera Baciloscopia" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Quinta Baciloscopia" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Sexto Cultivo" FontSize="20" />
+
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Positivo</x:String>
+                                <x:String>Negativo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="500, 300, 0, 0">
+                <Button Text="Implementacion Medicamento"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Button Text="Finalizar Baciloscopia"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Button Text="Cancelar"  HorizontalOptions="Center" VerticalOptions="Center" Margin="20, 0, 0, 0"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

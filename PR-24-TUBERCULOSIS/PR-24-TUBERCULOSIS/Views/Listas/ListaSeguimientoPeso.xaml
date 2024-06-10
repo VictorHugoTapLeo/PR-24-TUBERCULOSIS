@@ -1,0 +1,56 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Listas.ListaSeguimientoPeso"
+             Title="">
+    <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <StackLayout>
+            <Label 
+                Text="Lista de Seguimiento de Peso"
+                FontAttributes="Bold"
+                FontFamily="bold"
+                FontSize="Large"
+                TextColor="Black"
+                Margin="0,10,0,10"
+                HorizontalOptions="Center" />
+
+            <!-- TableView para mostrar los datos de seguimiento de peso -->
+            <TableView x:Name="seguimientoPesoTableView" BackgroundColor="#EFEFF4" Margin="10">
+                <TableRoot>
+                    <TableSection Title="Seguimiento de Peso">
+                        <ViewCell>
+                            <Grid BackgroundColor="#F0F0F0" Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Text="Fecha de Registro" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontAttributes="Bold" />
+                                <Label Text="Peso" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontAttributes="Bold" />
+                                <Label Text="Paciente" Grid.Column="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontAttributes="Bold" />
+                            </Grid>
+                        </ViewCell>
+
+                        <!-- Filas de datos -->
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <BoxView Color="#D3D3D3" Grid.ColumnSpan="3" HeightRequest="1" HorizontalOptions="FillAndExpand"  />
+                                <Label Text="{Binding FechaRegistro}" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" />
+                                <BoxView Color="#D3D3D3" Grid.Row="1" Grid.Column="0" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+                                <Label Text="{Binding Peso}" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" />
+                                <BoxView Color="#D3D3D3" Grid.Row="1" Grid.Column="1" HeightRequest="1" HorizontalOptions="FillAndExpand"  />
+                                <Label Text="{Binding Paciente}" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center" />
+                                <BoxView Color="#D3D3D3" Grid.Row="1" Grid.Column="2" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+                            </Grid>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button x:Name="btnCancelar" Text="Volver" BackgroundColor="#F23456" Clicked="btnCancelar_Clicked" WidthRequest="150" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

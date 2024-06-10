@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Transferencia.Transferencia"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout Margin="20">
+            <Label Text="Trasnferencia de Paciente" HorizontalOptions="Center" FontAttributes="Bold"
+           FontFamily="bold"
+           FontSize="Large" Margin="0,10,0,20" />
+            <Label Text="Datos del Establecimiento de Origen" FontSize="24" HorizontalOptions="Center" FontFamily="Arial"/>
+            <Grid ColumnDefinitions="*,*,*" Margin="0, 20, 0, 0">
+                <!-- Columna 1 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="0">
+                    <Label Text="Referencia (Se fue a otro lugar temporalmente)" VerticalOptions="Center"/>
+                    <RadioButton x:Name="radioButton1" GroupName="Opciones" CheckedChanged="radioButton1_CheckedChanged"/>
+
+                    <Label Text="Sede:" FontSize="12"/>
+                    <Entry Placeholder="Sede" x:Name="sedeOrigenEntry"/>
+
+                    <Label Text="Establecimiento:" FontSize="12"/>
+                    <Entry Placeholder="Establecimiento" x:Name="establecimientoOrigenEntry"/>
+                </StackLayout>
+
+                <!-- Columna 2 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="1">
+                    <Label Text="ContraReferencia (Cuando regresa)" VerticalOptions="Center"/>
+                    <RadioButton x:Name="radioButton2" GroupName="Opciones" CheckedChanged="radioButton1_CheckedChanged" />
+
+                    <Label Text="Coordinación de red de salud:" FontSize="12"/>
+                    <Entry Placeholder="Coordinación de red de salud" x:Name="coordinacionSaludEntry"/>
+
+                    <Label Text="Teléfono:" FontSize="12"/>
+                    <Entry Placeholder="Teléfono" x:Name="telefonoEntry"/>
+                </StackLayout>
+
+                <!-- Columna 3 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="2">
+                    <Label Text="Transferencia (Mandarle a otro lugar)" VerticalOptions="Center"/>
+                    <RadioButton x:Name="radioButton3" GroupName="Opciones" CheckedChanged="radioButton1_CheckedChanged" />
+
+                    <Label Text="Municipio:" FontSize="12"/>
+                    <Entry Placeholder="Municipio" x:Name="municipioEntry"/>
+
+                    <Label Text="Fecha:" FontSize="12"/>
+                    <DatePicker x:Name="FechaPicker"/>
+                </StackLayout>
+            </Grid>
+            <!-- Datos del Establecimiento de Destino -->
+            <Label Text="Datos del Establecimiento de Destino" FontSize="24" HorizontalOptions="Center" FontFamily="Arial"/>
+            <Grid ColumnDefinitions="*,*,*" Margin="0, 20, 0, 0">
+                <!-- Columna 1 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="0">
+                    <Label Text="Sede:" FontSize="12"/>
+                    <Entry Placeholder="Sede" x:Name="sedeDestinoEntry"/>
+
+                    <Label Text="Establecimiento:" FontSize="12"/>
+                    <Entry Placeholder="Establecimiento" x:Name="establecimientoDestinoEntry"/>
+                </StackLayout>
+
+                <!-- Columna 2 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="1">
+                    <Label Text="Coordinación de red de salud:" FontSize="12"/>
+                    <Entry Placeholder="Coordinación de red de salud" x:Name="coordinacionSaludDestinoEntry"/>
+
+                    <Label Text="Dirección:" FontSize="12"/>
+                    <Entry Placeholder="Dirección" x:Name="direccionDestinoEntry"/>
+                </StackLayout>
+
+                <!-- Columna 3 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="2">
+                    <Label Text="Municipio:" FontSize="12"/>
+                    <Entry Placeholder="Municipio" x:Name="municipioDestinoEntry"/>
+                </StackLayout>
+            </Grid>
+
+            <!-- Datos Generales y Clínicos del Paciente -->
+            <Label Text="Datos Generales y Clínicos del Paciente" FontSize="24" HorizontalOptions="Center" FontFamily="Arial"/>
+            <Grid ColumnDefinitions="*,*,*" Margin="0, 20, 0, 0">
+                <!-- Columna 1 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="0">
+                    <Label Text="Nombre y Apellido del paciente:" FontSize="12"/>
+                    <Entry Placeholder="Nombre y Apellido del paciente" x:Name="nombreApellidoEntry" IsReadOnly="True"/>
+
+                    <Label Text="Dirección Actual:" FontSize="12"/>
+                    <Entry Placeholder="Dirección Actual" x:Name="direccionActualEntry" IsReadOnly="True"/>
+
+                    <Label Text="Teléfono:" FontSize="12"/>
+                    <Entry Placeholder="Teléfono" x:Name="telefonoPacienteEntry" IsReadOnly="True"/>
+                </StackLayout>
+
+                <!-- Columna 2 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="1">
+                    <Label Text="Edad:" FontSize="12"/>
+                    <Entry Placeholder="Edad" x:Name="edadEntry"/>
+
+                    <Label Text="Nº de historial clínico:" FontSize="12"/>
+                    <Entry Placeholder="Nº de historial clínico" x:Name="historialClinicoEntry" />
+                </StackLayout>
+
+                <!-- Columna 3 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="2">
+                    <Label Text="Sexo:" FontSize="12"/>
+                    <Entry Placeholder="Sexo" x:Name="sexoEntry" IsReadOnly="True"/>
+
+                    <Label Text="Cédula de identidad o RUN:" FontSize="12"/>
+                    <Entry Placeholder="Cédula de identidad o RUN" x:Name="cedulaEntry" IsReadOnly="True"/>
+                </StackLayout>
+            </Grid>
+
+            <!-- Criterio De Ingreso -->
+            <Label Text="Criterio De Ingreso" FontSize="24" HorizontalOptions="Center" FontFamily="Arial"/>
+            <Grid ColumnDefinitions="*,*,*" Margin="0, 20, 0, 0">
+                <!-- Columna 1 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="0">
+                    <Label Text="Pulmonar Bacteriológicamente Positivo" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Criterios1" GroupName="Criterios" CheckedChanged="radioButton1_CheckedChanged_1" />
+
+                    <Label Text="Nuevo" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Criterios2" GroupName="Criterios" CheckedChanged="radioButton1_CheckedChanged_1" />
+
+                    <Label Text="Recaída" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Criterios3" GroupName="Criterios" CheckedChanged="radioButton1_CheckedChanged_1" />
+                </StackLayout>
+
+                <!-- Columna 2 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="1">
+                    <Label Text="Pulmonar Diagnóstico clínico" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Criterios4" GroupName="Criterios" CheckedChanged="radioButton1_CheckedChanged_1" />
+
+                    <Label Text="Perdida en el seguimiento" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Criterios5" GroupName="Criterios" CheckedChanged="radioButton1_CheckedChanged_1" />
+                </StackLayout>
+
+                <!-- Columna 3 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="2">
+                    <Label Text="Extrapulmonar" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Criterios6" GroupName="Criterios" CheckedChanged="radioButton1_CheckedChanged_1" />
+
+                    <Label Text="Fracaso" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Criterios7" GroupName="Criterios" CheckedChanged="radioButton1_CheckedChanged_1" />
+                </StackLayout>
+            </Grid>
+
+            <!-- Resultado de Bacteriología -->
+            <Label Text="Resultado de Bacteriología" FontSize="24" HorizontalOptions="Center" FontFamily="Arial" Margin="20, 40, 20, 20"/>
+            <Grid ColumnDefinitions="*,*,*" Margin="0, 20, 0, 0">
+                <!-- Columna 1 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="0">
+                    <Label Text="Baciloscopia de diagnóstico:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="baciloscopiaEntry"/>
+
+                    <Label Text="Cultivo de diagnóstico:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="cultivoDiagnosticoEntry"/>
+
+                    <Label Text="GeneXpert/MTB-RIF u otro:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="geneXpertEntry"/>
+
+                    <Label Text="Prueba de sensibilidad y resistencia:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="pruebaSensibilidadEntry"/>
+
+                    <Label Text="Resultado de ultima basiloscopia:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="ultimaBasiloscopiaEntry"/>
+
+                    <Label Text="Resultado de histopatología:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="histopatologiaEntry"/>
+
+                    <Label Text="Motivo:" FontSize="12"/>
+                    <Entry Placeholder="Motivo" x:Name="motivoEntry"/>
+                </StackLayout>
+
+                <!-- Columna 2 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="1">
+                    <Label Text="Resultado:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="resultado1Entry"/>
+
+                    <Label Text="Resultado:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="resultado2Entry"/>
+
+                    <Label Text="Resultado:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="resultado3Entry"/>
+
+                    <Label Text="Resultado:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="resultado4Entry"/>
+
+                    <Label Text="Resultado:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="resultado5Entry"/>
+
+                    <Label Text="Resultado:" FontSize="12"/>
+                    <Entry Placeholder="Resultado" x:Name="resultado6Entry"/>
+
+                </StackLayout>
+
+                <!-- Columna 3 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="2">
+                    <Label Text="Fecha" FontSize="12"/>
+                    <DatePicker x:Name="fecha1Picker"/>
+
+                    <Label Text="Fecha" FontSize="12"/>
+                    <DatePicker x:Name="fecha2Picker"/>
+
+                    <Label Text="Fecha" FontSize="12"/>
+                    <DatePicker x:Name="fecha3Picker"/>
+
+                    <Label Text="Fecha" FontSize="12"/>
+                    <DatePicker x:Name="fecha4Picker"/>
+
+                    <Label Text="Fecha" FontSize="12"/>
+                    <DatePicker x:Name="fecha5Picker"/>
+
+                    <Label Text="Fecha" FontSize="12"/>
+                    <DatePicker x:Name="fecha6Picker"/>
+                </StackLayout>
+            </Grid>
+
+            <!-- Tratamiento -->
+            <Label Text="Tratamiento" FontSize="24" HorizontalOptions="Center" FontFamily="Arial"/>
+            <Grid ColumnDefinitions="*,*,*" Margin="0, 20, 0, 0">
+                <!-- Columna 1 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="0">
+                    <Label Text="Tratamiento Actual: " VerticalOptions="Center"/>
+
+                    <Label Text="TB-Sensible" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Tratamientos1" GroupName="Tratamientos" CheckedChanged="Tratamientos1_CheckedChanged" />
+
+                    <Label Text="TB-MDR" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Tratamientos2" GroupName="Tratamientos" CheckedChanged="Tratamientos1_CheckedChanged" />
+
+                    <Label Text="Modificado" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Tratamientos3" GroupName="Tratamientos" CheckedChanged="Tratamientos1_CheckedChanged" />
+
+                    <Label Text="TB-XDR" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Tratamientos4" GroupName="Tratamientos" CheckedChanged="Tratamientos1_CheckedChanged" />
+
+                    <Label Text="RAFA" VerticalOptions="Center"/>
+                    <RadioButton x:Name="Tratamientos5" GroupName="Tratamientos" CheckedChanged="Tratamientos1_CheckedChanged" />
+
+                    <Label Text="Comentario:" FontSize="12"/>
+                    <Entry Placeholder="Comentario" x:Name="comentarioTratamientoEntry"/>
+                </StackLayout>
+
+
+                <!-- Columna 2 -->
+
+                <StackLayout Padding="20" Spacing="10" Grid.Column="1">
+                    <Label Text="Fase Actual: " VerticalOptions="Center"/>
+
+                    <Label Text="Intensiva" VerticalOptions="Center"/>
+                    <RadioButton x:Name="FaseActual1" GroupName="FaseActuales" CheckedChanged="FaseActual1_CheckedChanged" />
+
+                    <Label Text="Continuacion" VerticalOptions="Center"/>
+                    <RadioButton x:Name="FaseActual2" GroupName="FaseActuales" CheckedChanged="FaseActual1_CheckedChanged" />
+                </StackLayout>
+
+
+                <!-- Columna 3 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="2">
+                    <Label Text="Mes:" FontSize="12"/>
+                    <Entry Placeholder="Mes" x:Name="mesEntry"/>
+
+                    <Label Text="N de Dosis:" FontSize="12"/>
+                    <Entry Placeholder="Dosis" x:Name="dosisEntry"/>
+                </StackLayout>
+            </Grid>
+
+            <!-- Datos de la Persona que Efectua la Referencia o Transferencia -->
+            <Label Text="Datos de la Persona que Efectua la Referencia o Transferencia :" FontSize="24" HorizontalOptions="Center" FontFamily="Arial"/>
+            <Grid ColumnDefinitions="*,*,*" Margin="0, 20, 0, 0">
+                <!-- Columna 1 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="0">
+                    <Label Text="Nombre y Apellido:" FontSize="12"/>
+                    <Entry Placeholder="Nombre y Apellido" x:Name="nombreApellidoRefEntry" IsReadOnly="True"/>
+
+                </StackLayout>
+
+                <!-- Columna 2 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="1">
+                    <Label Text="Telefono :" FontSize="12"/>
+                    <Entry Placeholder="Telefono" x:Name="telefonoRefEntry" IsReadOnly="True"/>
+
+                </StackLayout>
+
+                <!-- Columna 3 -->
+                <StackLayout Padding="20" Spacing="10" Grid.Column="2">
+                    <Label Text="Cargo :" FontSize="12"/>
+                    <Entry Placeholder="Cargo" x:Name="cargoRefEntry"/>
+                </StackLayout>
+            </Grid>
+
+            <!-- Botones de Registro y Cancelar -->
+
+
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+                <Button Text="Registrar" TextColor="Black" BackgroundColor="#73F6A6"  Clicked="Registrar_Clicked" WidthRequest="150"/>
+                <Button Text="Cancelar" BackgroundColor="#F23456" TextColor="White" Clicked="Button_Clicked" WidthRequest="150"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

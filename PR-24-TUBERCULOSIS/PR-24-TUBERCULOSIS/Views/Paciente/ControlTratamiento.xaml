@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Paciente.ControlTratamiento"
+             Title="">
+    <ScrollView>
+        <Grid Padding="20" RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Control de tratamiento"
+                   FontAttributes="Bold"
+FontFamily="bold"
+FontSize="Large"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="4"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+
+            <Label Text="Aumento de dosis" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" />
+            <Picker x:Name="pickerAumentoDosis" Grid.Row="1" Grid.Column="1" WidthRequest="200">
+                <Picker.Items>
+                    <x:String>-</x:String>
+                    <x:String>+1</x:String>
+                    <x:String>F</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!--<Label Text="Cantidad de dosis" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" IsVisible="false"/>
+            <Entry x:Name="entryCantidadDosis" Grid.Row="1" Grid.Column="3" WidthRequest="200" IsVisible="false"/>-->
+
+            <Label Text="Numero Basiloscopia y Cultivo" TextColor="Black" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" />
+            <Picker x:Name="pickerNumeroBasiloscopia" Grid.Row="1" Grid.Column="3" WidthRequest="200">
+                <Picker.Items>
+                    <x:String>Primer</x:String>
+                    <x:String>Segund</x:String>
+                    <x:String>Tercer</x:String>
+                    <x:String>Cuart</x:String>
+                    <x:String>Quint</x:String>
+                    <x:String>Sext</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Basiloscopia" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" />
+            <Picker x:Name="pickerBasiloscopia" Grid.Row="3" Grid.Column="1" WidthRequest="200">
+                <Picker.Items>
+                    <x:String>Positivo</x:String>
+                    <x:String>Negativo</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Cultivo" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" />
+            <Picker x:Name="pickerCultivo" Grid.Row="3" Grid.Column="3" WidthRequest="200">
+                <Picker.Items>
+                    <x:String>Positivo</x:String>
+                    <x:String>Negativo</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Genexpert" Grid.Row="4" Grid.Column="0" VerticalOptions="Center" />
+            <Entry x:Name="txtGenexpert" Grid.Row="4" Grid.Column="1" WidthRequest="200" IsEnabled="False"/>
+
+
+
+            <Grid Grid.Row="5" Grid.ColumnSpan="4" HorizontalOptions="Center" Margin="0,20,0,0">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="20">
+                    <Button Text="Registrar" HorizontalOptions="FillAndExpand" BackgroundColor="#73F6A6" TextColor="Black" WidthRequest="200" Clicked="OnRegistrarClicked" />
+                    <Button Text="Cancelar" Clicked="Button_Clicked" HorizontalOptions="FillAndExpand" BackgroundColor="#F23456" TextColor="White" WidthRequest="200" />
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

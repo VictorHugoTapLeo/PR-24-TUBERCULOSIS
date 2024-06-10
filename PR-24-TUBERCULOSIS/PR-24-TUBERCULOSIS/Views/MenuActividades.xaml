@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.MenuActividades"
+             Title="">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+        
+        <Label Text="Actividades" FontAttributes="Bold"
+               x:Name="lblActividades"
+                       FontFamily="bold"
+                       FontSize="Header" HorizontalOptions="Center" />
+
+
+        <StackLayout Spacing="10">
+
+            <Button Text="Seguimiento Peso" x:Name="Peso" BackgroundColor="Black" TextColor="White" Clicked="Peso_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+            WidthRequest="300"/>
+            <Button Text="Registros Seguimiento Peso" x:Name="ListaPeso" BackgroundColor="Black" TextColor="White" Clicked="RegistroPeso_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+            WidthRequest="300"/>
+            <Button Text="Condicion de Egreso" x:Name="Egreso" BackgroundColor="Black" TextColor="White" Clicked="Egreso_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+            WidthRequest="300"/>
+
+            <Button Text="Transferencia" x:Name="transferencia" BackgroundColor="Black" TextColor="White" Clicked="Transferencia_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+            WidthRequest="300"/>
+            <Button Text="Control Tratamiento" x:Name="Tratamiento" BackgroundColor="Black" TextColor="White" Clicked="Tratamiento_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+            WidthRequest="300"/>
+            <Button Text="Registros Control Tratamiento" x:Name="ListaTratamiento" BackgroundColor="Black" TextColor="White" Clicked="ListaTratamiento_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+            WidthRequest="300"/>
+
+            <Button Text="Volver" BackgroundColor="#F23456" Clicked="Volver_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+            WidthRequest="300" />
+
+        </StackLayout>
+
+
+    </StackLayout>
+
+</ContentPage>

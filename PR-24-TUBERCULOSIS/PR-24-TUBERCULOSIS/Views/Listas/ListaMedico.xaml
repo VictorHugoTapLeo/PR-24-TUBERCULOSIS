@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PR_24_TUBERCULOSIS"
+             x:Class="PR_24_TUBERCULOSIS.ListaMedico">
+    <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Start" Grid.Row="1" Margin="10">
+
+            <Button Text="Volver"
+                    Clicked="OnVolverClicked"
+                    BackgroundColor="#607D8B"
+                    TextColor="White" />
+
+
+            <Button Text="Crear Doctor"
+                    Clicked="OnCrearDoctorClicked"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    Margin="10,0,0,0" />
+        </StackLayout>
+
+        <Label Text="Lista de los Medicos"
+               FontSize="32"
+               FontAttributes="Bold"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Grid.Row="0" />
+
+
+        <Grid Grid.Row="2" BackgroundColor="#673AB7" Padding="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="130" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="0" Margin="5"/>
+            <Label Text="Apellido" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="1" Margin="5"/>
+            <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="2" Margin="5"/>
+            <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="3" Margin="5"/>
+            <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="3" Margin="5"/>
+        </Grid>
+
+
+        <ListView ItemsSource="{Binding Medicos}"
+                  Grid.Row="3">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="5" CornerRadius="0" BorderColor="#673AB7" HasShadow="False" BackgroundColor="{Binding BackgroundColor}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="130" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                </Grid.ColumnDefinitions>
+
+
+                                <Label Text="{Binding Nombre}"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Grid.Column="0"
+                                       Margin="5" />
+
+
+                                <Label Text="{Binding Apellido}"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Grid.Column="1"
+                                       Margin="5" />
+
+                                <Button Text="Editar Doctor"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type local:ListaPaciente}}, Path=NuevoEditarCommand}"
+                                        Clicked="OnEditarDoctorClicked"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        Grid.Column="2"
+                                        Margin="5"
+                                        BackgroundColor="#4CAF50"
+                                        TextColor="White" />
+
+                                <Button Text="Eliminar"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type local:ListaMedico}}, Path=EliminarCommand}"
+                                        CommandParameter="{Binding}"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        Grid.Column="3"
+                                        Margin="5"
+                                        BackgroundColor="#f44336"
+                                        TextColor="White" />
+
+
+                                <Button Text="Detalle"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type local:ListaMedico}}, Path=DetalleCommand}"
+                                        CommandParameter="{Binding}"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        Grid.Column="4"
+                                        Margin="5"
+                                        BackgroundColor="#2196F3"
+                                        TextColor="White" />
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.VistaPersonal"
+             Title="VistaPersonal">
+    <StackLayout>
+        <Label 
+            Text="Lista de Personal de Salud"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <!-- TableView para mostrar los datos de personalSalud -->
+        <TableView x:Name="personalSaludTableView">
+            <TableRoot>
+                <TableSection Title="Personal de Salud">
+                    <!-- Cabecera de la tabla -->
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Código" Grid.Column="0" />
+                            <Label Text="Destino" Grid.Column="1" />
+                        </Grid>
+                    </ViewCell>
+
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding codigoPersonalSalud}" Grid.Column="0" />
+                            <Label Text="{Binding destino}" Grid.Column="1" />
+                        </Grid>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </StackLayout>
+</ContentPage>
+
+

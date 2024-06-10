@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Kardex.DetallesKardex"
+             Title="">
+    <ScrollView>
+        <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+            <Label Text="Detalles" FontAttributes="Bold"
+            FontFamily="bold"
+            FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+            <Label Text="Tipo Tuberculosis:" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label  x:Name="txtTipoTuberculosis" Text="TipoTuberculosis" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label  Text="Saturacion:" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label  x:Name="txtSaturacion" Text="Saturacion" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label Text="Frecuencia Cardiaca:" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label x:Name="txtFrecuenciaCardiaca" Text="FrecuenciaCardiaca" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label Text="frecuencia Respiratoria:" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label x:Name="txtfrecuenciaRespiratoria" Text="frecuenciaRespiratoria" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label Text="Diagnosticado Por:" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label x:Name="txtDiagnosticadoPor" Text="DiagnosticadoPor" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label Text="Fecha Registro:" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label x:Name="txtFechaRegistro" Text="FechaRegistro" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label Text="Paciente:" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label  x:Name="txtPaciente" Text="Paciente" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label Text="Numero Dosis" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label  x:Name="txtNumeroDosis" Text="NumeroDosis" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label Text="Docificacion Medicamentos:" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label x:Name="txtDocificacionMedicamentos" Text="DocificacionMedicamentos" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label  Text="Cultivo:" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label  x:Name="txtCultivo" Text="Cultivo" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Label Text="Basiloscopia:" VerticalOptions="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="20"/>
+            <Label x:Name="txtBasiloscopia" Text="Basiloscopia" VerticalOptions="Center" HorizontalTextAlignment="Center" />
+
+            <Button x:Name="btnCancelar" Text="Volver" Clicked="btnCancelar_Clicked" BackgroundColor="#F23456" TextColor="White" HorizontalOptions="Center" Margin="0,10,0,0" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Login.CambiarContra"
+             Title="">
+    <Grid RowDefinitions=".3*, .7*"
+          VerticalOptions="Center"
+          HorizontalOptions="Center">
+
+        <Grid Grid.Row="1">
+            
+            <VerticalStackLayout Margin="40,-80,40,0"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 Spacing="20">
+                <Label FontAttributes="Bold"
+                       FontFamily="bold"
+                       FontSize="Large"
+                       Text="Cambio de Contrasena"
+                       TextColor="#2D2D2D"
+                       HorizontalOptions="Center"></Label>
+
+                <Label FontFamily="medium"
+                       Text="Inicia sesion para continuar"
+                       TextColor="#A3A3A4"
+                       HorizontalOptions="Center"></Label>
+
+                <Entry Placeholder="Ingrese su usuario"
+                       x:Name="UusarioEntry"
+                       VerticalOptions="Center"
+                       HeightRequest="60"
+                       WidthRequest="300"
+                       HorizontalOptions="Center"></Entry>
+
+                <Entry Placeholder="Ingrese su contrasena anterior"
+                       x:Name="OldContra"
+                       IsPassword="True"
+                       VerticalOptions="Center"
+                       HeightRequest="60"
+                       WidthRequest="300"
+                       HorizontalOptions="Center"></Entry>
+
+                <Entry Placeholder="Ingrese su nueva contrasena"
+                       x:Name="ContrasenaNueva"
+                       IsPassword="True"
+                       VerticalOptions="Center"
+                       HeightRequest="60"
+                       WidthRequest="300"
+                       HorizontalOptions="Center"></Entry>
+
+                <Entry Placeholder="Confirmar contrasena"
+                       x:Name="ConfirContra"
+                       IsPassword="True"
+                       VerticalOptions="Center"
+                       HeightRequest="60"
+                       WidthRequest="300"
+                       HorizontalOptions="Center"></Entry>
+
+                <Label Margin="0,20,0,-10"
+                       HorizontalOptions="Center"
+                       Text=""
+                       x:Name="lblError"
+                       TextColor="#F23456"></Label>
+
+                <Button Margin="0,20,0,0"
+                        BackgroundColor="#73F6A6"
+                        HeightRequest="60"
+                        WidthRequest="300"
+                        Text="Cambiar Contrasena"
+                        TextColor="Black"
+                        x:Name="CambiarContraseña"
+                        HorizontalOptions="Center"
+                        CornerRadius="30"
+                        Clicked="CambiarContraseña_Clicked"></Button>
+                <Button Margin="0,20,0,0"
+        BackgroundColor="#F23456"
+        HeightRequest="60"
+        WidthRequest="300"
+        Text="Volver"
+        TextColor="White"
+        x:Name="CambiarContraseña2"
+        HorizontalOptions="Center"
+        CornerRadius="30"
+        Clicked="CambiarContraseña_Clicked_1"></Button>
+            </VerticalStackLayout>
+            
+        </Grid>
+
+    </Grid>
+</ContentPage>

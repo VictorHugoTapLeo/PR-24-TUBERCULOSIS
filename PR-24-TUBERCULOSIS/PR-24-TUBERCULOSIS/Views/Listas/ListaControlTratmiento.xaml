@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Listas.ListaControlTratmiento"
+             Title="">
+    <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Start" Grid.Row="1" Margin="10">
+
+            <Button Text="Volver"
+                  BackgroundColor="#607D8B"
+                  TextColor="White"
+                 Clicked="Button_Clicked_1"/>
+
+        </StackLayout>
+
+        <Label Text="Lista Control Tratamiento"
+        FontAttributes="Bold"
+                    FontFamily="bold"
+                    FontSize="Large"
+        TextColor="Black"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        Grid.Row="0" />
+
+
+        <Grid Grid.Row="2" BackgroundColor="Black" Padding="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+
+
+
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Basiloscopia" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="1" Margin="5"/>
+            <Label Text="Cultivo" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="2" Margin="5"/>
+            <Label Text="Aumento de dosis" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="3" Margin="5"/>
+            <Label Text="GenExpert" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="4" Margin="5"/>
+            <Label Text="Nombre paciente" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="0" Margin="5"/>
+        </Grid>
+
+
+        <ListView x:Name="GridData" ItemsSource="{Binding }"
+           Grid.Row="5">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="5" CornerRadius="0" BorderColor="Black" HasShadow="False" BackgroundColor="{Binding BackgroundColor}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+
+
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding Nombre}"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Grid.Column="0"
+                                    Margin="5" />
+
+                                <Label Text="{Binding Basiloscopia }"
+                                  HorizontalOptions="Center"
+                                  VerticalOptions="Center"
+                                  Grid.Column="1"
+                                  Margin="5" />
+
+                                <Label Text="{Binding Cultivo}"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Grid.Column="2"
+                                Margin="5" />
+
+
+                                <Label Text="{Binding AumentoDosis }"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Grid.Column="3"
+                                Margin="5" />
+
+                                <Label Text="{Binding genExpert}"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Grid.Column="4"
+                             Margin="5" />
+
+
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Login"
+             Title="">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+
+        
+        <Label Text="Inicio de Sesion" FontSize="32" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="https://cdn-icons-png.flaticon.com/512/456/456212.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" Grid.Column="0" Margin="0,0,10,0"/>
+            <Entry x:Name="UsuarioEntry" Placeholder="Ingrese su Usuario" Grid.Column="1" Margin="0,0,0,0"/>
+        </Grid>
+
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="https://w7.pngwing.com/pngs/975/821/png-transparent-password-manager-computer-icons-password-strength-password-safe-chang-miscellaneous-password-strength-password-safe-thumbnail.png" HeightRequest="24" WidthRequest="24" VerticalOptions="Center" Grid.Column="0" Margin="0,0,10,0"/>
+            <Entry x:Name="ContraseñaEntry" Placeholder="Ingrese su Contraseña" IsPassword="True" Grid.Column="1" Margin="0,0,0,0"/>
+        </Grid>
+
+       
+        <Button Text="Iniciar Sesión" Clicked="IniciarSesion_Clicked" />
+
+        
+        <Label Text="¿Olvidaste tu contraseña?" TextColor="Blue" HorizontalOptions="Center">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OlvidasteContraseña_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Registrar.RegistroSeguimientoPeso">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Registrar Seguimiento Peso" HorizontalOptions="Center" FontAttributes="Bold"
+                       FontFamily="bold"
+                       FontSize="Large" Margin="0,10,0,20" />
+
+            <Grid Padding="20" RowSpacing="10" ColumnSpacing="20">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Columnas -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Columna 1 -->
+                
+                <!-- Columna 2 -->
+                
+
+                <!-- Columna 3 -->
+                <Label Text="Peso" Grid.Row="0" Grid.Column="1" Margin="0,10,0,5"/>
+                <Entry x:Name="txtPeso" Grid.Row="1" Grid.Column="1" Margin="0,5"/>
+
+                <Grid Grid.Row="12" Grid.ColumnSpan="3" VerticalOptions="End">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="Registrar" BackgroundColor="#73F6A6" TextColor="Black" Grid.Column="0" WidthRequest="150" Margin="0,10" Clicked="OnRegistrarClicked"/>
+                    <Button Text="Cancelar" BackgroundColor="#F23456" TextColor="White" Grid.Column="1" WidthRequest="150" Margin="0,10" Clicked="OnCancelarClicked"/>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentView>

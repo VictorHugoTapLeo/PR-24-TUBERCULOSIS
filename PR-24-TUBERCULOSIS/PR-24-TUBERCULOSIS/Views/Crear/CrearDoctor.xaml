@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.CrearDoctor"
+             Title="">
+    <ScrollView>
+        <Grid Padding="40">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label Text="Registro Doctor" FontAttributes="Bold"
+                       FontFamily="bold"
+                       FontSize="Large" HorizontalOptions="Center" Grid.Row="0" Grid.ColumnSpan="4" Padding="35"/>
+
+            <!-- Primer Nombre y Segundo Nombre -->
+            <Label Text="Primer Nombre" VerticalOptions="Center" Grid.Row="1" Grid.Column="0" />
+            <Entry x:Name="PrimerNombreEntry" Placeholder="Primer Nombre" WidthRequest="200" Grid.Row="1" Grid.Column="1" />
+            <Label Text="Segundo Nombre" VerticalOptions="Center" Grid.Row="1" Grid.Column="2" />
+            <Entry x:Name="SegundoNombreEntry" Placeholder="Segundo Nombre" WidthRequest="200" Grid.Row="1" Grid.Column="3" />
+
+            <!-- Primer Apellido y Segundo Apellido -->
+            <Label Text="Primer Apellido" VerticalOptions="Center" Grid.Row="2" Grid.Column="0" />
+            <Entry x:Name="PrimerApellidoEntry" Placeholder="Primer Apellido" WidthRequest="200" Grid.Row="2" Grid.Column="1" />
+            <Label Text="Segundo Apellido" VerticalOptions="Center" Grid.Row="2" Grid.Column="2" />
+            <Entry x:Name="SegundoApellidoEntry" Placeholder="Segundo Apellido" WidthRequest="200" Grid.Row="2" Grid.Column="3" />
+
+            <!-- Cedula de Identidad y Celular -->
+            <Label Text="Cedula de Identidad" VerticalOptions="Center" Grid.Row="3" Grid.Column="0" />
+            <Entry x:Name="CIEntry" Placeholder="C.I:" WidthRequest="200" Grid.Row="3" Grid.Column="1" />
+            <Label Text="Celular" VerticalOptions="Center" Grid.Row="3" Grid.Column="2" />
+            <Entry x:Name="TelefonoEntry" Placeholder="Numero" WidthRequest="200" Grid.Row="3" Grid.Column="3" />
+
+            <!-- Correo Electrónico y Usuario -->
+            <Label Text="Correo Electrónico" VerticalOptions="Center" Grid.Row="4" Grid.Column="0" />
+            <Entry x:Name="CorreoEntry" Placeholder="Correo electrónico" WidthRequest="200" Grid.Row="4" Grid.Column="1" />
+            <Label Text="Usuario" VerticalOptions="Center" Grid.Row="4" Grid.Column="2" />
+            <Entry x:Name="UsuarioEntry" Placeholder="Nombre de usuario" WidthRequest="200" Grid.Row="4" Grid.Column="3" />
+
+            <!-- Codigo Doctor -->
+            <Label Text="Codigo Doctor" VerticalOptions="Center" Grid.Row="5" Grid.Column="0" />
+            <Entry x:Name="CodigoEntry" Placeholder="Codigo" WidthRequest="200" Grid.Row="5" Grid.Column="1" />
+
+            <!-- Botones de Registro y Cancelar -->
+            <StackLayout Grid.Row="6" Grid.ColumnSpan="4" Padding="35" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="20">
+                <Button x:Name="btnRegistrar" TextColor="Black" Text="Registrar" BackgroundColor="#73F6A6" Clicked="btnRegistrar_Clicked" WidthRequest="150" />
+                <Button x:Name="btnCancelar" Text="Cancelar" BackgroundColor="#F23456" Clicked="btnCancelar_Clicked" WidthRequest="150" />
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
+

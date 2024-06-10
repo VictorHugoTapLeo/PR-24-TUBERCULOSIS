@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.CrearKardex">
+    
+                
+        <ScrollView>
+        <StackLayout>
+            <Label Text="Crear Kardex" HorizontalOptions="Center" FontSize="32" FontAttributes="Bold" Margin="0,10,0,20" />
+
+
+            <Grid Padding="20" RowSpacing="10" ColumnSpacing="20">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            
+            
+            
+            <!-- Columnas -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Columna 1 -->
+            <Label Text="Tipo de Tuberculosis" Grid.Row="0" Grid.Column="0" Margin="0,10,0,5"/>
+            <Entry x:Name="TipoTuberculosisEntry" Grid.Row="1" Grid.Column="0" Margin="0,5"/>
+
+            <Label Text="Fecha de inicio de tratamiento" Grid.Row="2" Grid.Column="0" Margin="0,10,0,5"/>
+            <DatePicker x:Name="FechaInicioDatePicker" Grid.Row="3" Grid.Column="0" Margin="0,5"/>
+
+            <Label Text="Peso Inicial" Grid.Row="4" Grid.Column="0" Margin="0,10,0,5"/>
+            <Entry x:Name="PesoInicialEntry" Grid.Row="5" Grid.Column="0" Margin="0,5"/>
+
+            <Label Text="Baciloscopia" Grid.Row="6" Grid.Column="0" Margin="0,10,0,5"/>
+            <Entry x:Name="BaciloscopiaEntry" Grid.Row="7" Grid.Column="0" Margin="0,5"/>
+
+            <Label Text="Condicion de Egreso" Grid.Row="8" Grid.Column="0" Margin="0,10,0,5"/>
+            <Entry x:Name="CondicionEgresoEntry" Grid.Row="9" Grid.Column="0" Margin="0,5"/>
+
+            <Label Text="Transferencia de" Grid.Row="10" Grid.Column="0" Margin="0,10,0,5"/>
+            <Entry x:Name="TransferenciaEntry" Grid.Row="11" Grid.Column="0" Margin="0,5"/>
+
+            <!-- Columna 2 -->
+            <Label Text="Diagnostico" Grid.Row="0" Grid.Column="1" Margin="0,10,0,5"/>
+            <Entry x:Name="DiagnosticoEntry" Grid.Row="1" Grid.Column="1" Margin="0,5"/>
+
+            <Label Text="Esquema de Tratamiento" Grid.Row="2" Grid.Column="1" Margin="0,10,0,5"/>
+            <Entry x:Name="EsquemaTratamientoEntry" Grid.Row="3" Grid.Column="1" Margin="0,5"/>
+
+            <Label Text="Docificacion de Medicamentos" Grid.Row="4" Grid.Column="1" Margin="0,10,0,5"/>
+            <Entry x:Name="DocificacionEntry" Grid.Row="5" Grid.Column="1" Margin="0,5"/>
+
+            <Label Text="Cultivo Control" Grid.Row="6" Grid.Column="1" Margin="0,10,0,5"/>
+            <Entry x:Name="CultivoControlEntry" Grid.Row="7" Grid.Column="1" Margin="0,5"/>
+
+            <Label Text="Numero de Dosis" Grid.Row="8" Grid.Column="1" Margin="0,10,0,5"/>
+            <Entry x:Name="NumeroDosisEntry" Grid.Row="9" Grid.Column="1" Margin="0,5"/>
+
+            <!-- Columna 3 -->
+            <Label Text="Fecha de Diagnostico" Grid.Row="0" Grid.Column="2" Margin="0,10,0,5"/>
+            <DatePicker x:Name="FechaDiagnosticoDatePicker" Grid.Row="1" Grid.Column="2" Margin="0,5"/>
+                
+            <Label Text="Talla" Grid.Row="2" Grid.Column="2" Margin="0,10,0,5"/>
+            <Entry x:Name="TallaEntry" Grid.Row="3" Grid.Column="2" Margin="0,5"/>
+
+            <Label Text="Planificador de Controles" Grid.Row="4" Grid.Column="2" Margin="0,10,0,5"/>
+            <Entry x:Name="PlanificadorControlesEntry" Grid.Row="5" Grid.Column="2" Margin="0,5"/>
+
+            <Label Text="Peso Final" Grid.Row="6" Grid.Column="2" Margin="0,10,0,5"/>
+            <Entry x:Name="PesoFinalEntry" Grid.Row="7" Grid.Column="2" Margin="0,5"/>
+
+            <Label Text="Transferencia a" Grid.Row="8" Grid.Column="2" Margin="0,10,0,5"/>
+            <Entry x:Name="TransferenciaAEntry" Grid.Row="9" Grid.Column="2" Margin="0,5"/>
+
+
+            <Grid Grid.Row="12" Grid.ColumnSpan="3" VerticalOptions="End">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                    <Button Text="Registrar" BackgroundColor="Green" Grid.Column="0" Margin="0,10" Clicked="RegistrarButton_Clicked"/>
+                    <Button Text="Cancelar" BackgroundColor="Red" Grid.Column="1" Margin="0,10" Clicked="CancelarButton_Clicked"/>
+
+                </Grid>
+        </Grid>
+        </StackLayout>
+    </ScrollView>
+
+</ContentView>

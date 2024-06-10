@@ -1,0 +1,245 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PR_24_TUBERCULOSIS
+build_property.ProjectDir = C:\Users\victo\Desktop\git\PR-24-TUBERCULOSIS-REP\PR-24-TUBERCULOSIS\PR-24-TUBERCULOSIS\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Crear/CrearBaciloscopia.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Crear.CrearBaciloscopia.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Crear\CrearBaciloscopia.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Crear\CrearBaciloscopia.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Crear/CrearDoctor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Crear.CrearDoctor.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Crear\CrearDoctor.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Crear\CrearDoctor.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Crear/CrearKardex.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Crear.CrearKardex.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Crear\CrearKardex.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Crear\CrearKardex.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Crear/CrearPaciente.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Crear.CrearPaciente.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Crear\CrearPaciente.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Crear\CrearPaciente.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Doctor/DeleteDoctor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Doctor.DeleteDoctor.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Doctor\DeleteDoctor.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Doctor\DeleteDoctor.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Doctor/UpdateDoctor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Doctor.UpdateDoctor.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Doctor\UpdateDoctor.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Doctor\UpdateDoctor.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Doctor/ViewDoctor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Doctor.ViewDoctor.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Doctor\ViewDoctor.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Doctor\ViewDoctor.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Kardex/CrearKardex.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Kardex.CrearKardex.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Kardex\CrearKardex.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Kardex\CrearKardex.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Kardex/DetallesKardex.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Kardex.DetallesKardex.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Kardex\DetallesKardex.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Kardex\DetallesKardex.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Kardex/ViewKardex.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Kardex.ViewKardex.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Kardex\ViewKardex.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Kardex\ViewKardex.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Listas/ListaBasiloscopia.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Listas.ListaBasiloscopia.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Listas\ListaBasiloscopia.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Listas\ListaBasiloscopia.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Listas/ListaControlTratmiento.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Listas.ListaControlTratmiento.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Listas\ListaControlTratmiento.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Listas\ListaControlTratmiento.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Listas/ListaKardexPaciente.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Listas.ListaKardexPaciente.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Listas\ListaKardexPaciente.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Listas\ListaKardexPaciente.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Listas/ListaMedico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Listas.ListaMedico.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Listas\ListaMedico.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Listas\ListaMedico.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Listas/ListaPaciente.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Listas.ListaPaciente.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Listas\ListaPaciente.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Listas\ListaPaciente.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Listas/ListaSeguimientoPeso.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Listas.ListaSeguimientoPeso.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Listas\ListaSeguimientoPeso.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Listas\ListaSeguimientoPeso.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Login.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Login.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Login/CambiarContra.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Login.CambiarContra.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Login\CambiarContra.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Login\CambiarContra.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Login/RecuperarContrasena.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Login.RecuperarContrasena.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Login\RecuperarContrasena.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Login\RecuperarContrasena.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Menu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Menu.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Menu.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Menu.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/MenuActividades.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.MenuActividades.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MenuActividades.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MenuActividades.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Paciente/ControlEgreso.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Paciente.ControlEgreso.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Paciente\ControlEgreso.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Paciente\ControlEgreso.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Paciente/ControlTratamiento.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Paciente.ControlTratamiento.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Paciente\ControlTratamiento.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Paciente\ControlTratamiento.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Paciente/ListaPacientes.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Paciente.ListaPacientes.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Paciente\ListaPacientes.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Paciente\ListaPacientes.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Paciente/ListaPreRegistro.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Paciente.ListaPreRegistro.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Paciente\ListaPreRegistro.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Paciente\ListaPreRegistro.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Paciente/MetodoDiagnostico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Paciente.MetodoDiagnostico.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Paciente\MetodoDiagnostico.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Paciente\MetodoDiagnostico.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/ParteMovil/DetalleQr.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.ParteMovil.DetalleQr.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ParteMovil\DetalleQr.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ParteMovil\DetalleQr.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/ParteMovil/QrGenerador.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.ParteMovil.QrGenerador.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ParteMovil\QrGenerador.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ParteMovil\QrGenerador.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/ParteMovil/ScanerQr.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.ParteMovil.ScanerQr.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ParteMovil\ScanerQr.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ParteMovil\ScanerQr.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Registrar/RegistroSeguimientoPeso.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Registrar.RegistroSeguimientoPeso.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Registrar\RegistroSeguimientoPeso.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Registrar\RegistroSeguimientoPeso.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/Transferencia/Transferencia.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.Transferencia.Transferencia.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Transferencia\Transferencia.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Transferencia\Transferencia.xaml
+
+[C:/Users/victo/Desktop/git/PR-24-TUBERCULOSIS-REP/PR-24-TUBERCULOSIS/PR-24-TUBERCULOSIS/Views/VistaPersonal.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PR_24_TUBERCULOSIS.Views.VistaPersonal.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\VistaPersonal.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\VistaPersonal.xaml

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Paciente.ControlEgreso"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout Padding="35" Spacing="35">
+
+            <!-- Título -->
+            <Label 
+                Text="Control de Egreso"
+                FontAttributes="Bold"
+                FontFamily="bold"
+                FontSize="Large"
+                Padding="35"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+            <!-- Contenedor de la tabla -->
+            <Grid ColumnDefinitions="Auto,*,Auto"
+                  RowDefinitions="auto,auto" Padding="35"
+                  HorizontalOptions="Center">
+
+                <!-- Primera Fila -->
+                <Label Text="Baciloscopia" Grid.Row="0" Grid.Column="0" Margin="0,10,10,0"/>
+                <Picker x:Name="ControlEgresoPicker" Grid.Row="0" Grid.Column="1" WidthRequest="150">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Curado</x:String>
+                            <x:String>No Curado</x:String>
+                            <x:String>En Tratamiento</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Grid.Row="0" Grid.Column="2" Margin="10,10,0,0"/>
+
+            </Grid>
+
+            <!-- Botones -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+                <Button Text="Registrar" TextColor="Black" BackgroundColor="#73F6A6"  Clicked="Button_Clicked" WidthRequest="150"/>
+                <Button Text="Cancelar" BackgroundColor="#F23456" TextColor="White" Clicked="Button_Clicked_1" WidthRequest="150"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

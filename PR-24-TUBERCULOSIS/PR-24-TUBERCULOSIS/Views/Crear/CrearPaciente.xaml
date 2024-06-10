@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.CrearPaciente"
+             Title="">
+    <ScrollView>
+        <Grid Padding="40">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label Text="Registro Paciente" FontAttributes="Bold"
+                       FontFamily="bold"
+                       FontSize="Large" HorizontalOptions="Center" Grid.Row="0" Grid.ColumnSpan="4" Padding="35"/>
+
+            <!-- Columna 1 -->
+            <Label Text="Nombre" FontSize="12" VerticalOptions="Center" Grid.Row="1" Grid.Column="0" />
+            <Entry x:Name="PrimerNombreEntry" Placeholder="Primer Nombre" WidthRequest="200" Grid.Row="1" Grid.Column="1" />
+            <Label Text="Segundo Nombre" FontSize="12" VerticalOptions="Center" Grid.Row="1" Grid.Column="2" />
+            <Entry x:Name="SegundoNombreEntry" Placeholder="Segundo Nombre" WidthRequest="200" Grid.Row="1" Grid.Column="3" />
+
+            <Label Text="Primer Apellido" FontSize="12" VerticalOptions="Center" Grid.Row="2" Grid.Column="0" />
+            <Entry x:Name="PrimerApellidoEntry" Placeholder="Primer Apellido" WidthRequest="200" Grid.Row="2" Grid.Column="1" />
+            <Label Text="Segundo Apellido" FontSize="12" VerticalOptions="Center" Grid.Row="2" Grid.Column="2" />
+            <Entry x:Name="SegundoApellidoEntry" Placeholder="Segundo Apellido" WidthRequest="200" Grid.Row="2" Grid.Column="3" />
+
+            <Label Text="Carnet de Identidad" FontSize="12" VerticalOptions="Center" Grid.Row="3" Grid.Column="0" />
+            <Entry x:Name="CarnetIdentidadEntry" Placeholder="Carnet de Identidad" WidthRequest="200" Grid.Row="3" Grid.Column="1" />
+            <Label Text="Correo" FontSize="12" VerticalOptions="Center" Grid.Row="3" Grid.Column="2" />
+            <Entry x:Name="CorreoEntry" Placeholder="Correo" WidthRequest="200" Grid.Row="3" Grid.Column="3" />
+            <!-- Columna 2 -->
+            <Label Text="Latitud" FontSize="12" VerticalOptions="Center" Grid.Row="4" Grid.Column="0" />
+            <Entry x:Name="LatitudEntry" Placeholder="Latitud" WidthRequest="200" Grid.Row="4" Grid.Column="1" />
+            <Label Text="Longitud" FontSize="12" VerticalOptions="Center" Grid.Row="4" Grid.Column="2" />
+            <Entry x:Name="LongitudEntry" Placeholder="Longitud" WidthRequest="200" Grid.Row="4" Grid.Column="3" />
+
+            <Label Text="Fecha de Nacimiento" FontSize="12" VerticalOptions="Center" Grid.Row="5" Grid.Column="0" />
+            <DatePicker x:Name="FechaNacimientoPicker" WidthRequest="200" Grid.Row="5" Grid.Column="1" />
+            <Label Text="Condicion" FontSize="12" VerticalOptions="Center" Grid.Row="5" Grid.Column="2" />
+            <Picker x:Name="CondicionPicker" WidthRequest="200" Grid.Row="5" Grid.Column="3">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>CURADO</x:String>
+                        <x:String>FALLECIDO</x:String>
+                        <x:String>EN TRATAMIENTO</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+            <!-- Columna 3 -->
+            <Label Text="Número Celular" FontSize="12" VerticalOptions="Center" Grid.Row="6" Grid.Column="0" />
+            <Entry x:Name="numeroCelularEntry" Placeholder="Número Celular" WidthRequest="200" Grid.Row="6" Grid.Column="1" />
+            <Label Text="Número Auxiliar 1" FontSize="12" VerticalOptions="Center" Grid.Row="6" Grid.Column="2" />
+            <Entry x:Name="NumAux1Entry" Placeholder="Número Auxiliar 1" WidthRequest="200" Grid.Row="6" Grid.Column="3" />
+
+            <Label Text="Número Auxiliar 2" FontSize="12" VerticalOptions="Center" Grid.Row="7" Grid.Column="0" />
+            <Entry x:Name="NumAux2Entry" Placeholder="Número Auxiliar 2" WidthRequest="200" Grid.Row="7" Grid.Column="1" />
+            <Label Text="Género" FontSize="12" VerticalOptions="Center" Grid.Row="7" Grid.Column="2" />
+            <Picker x:Name="GeneroPicker" WidthRequest="200" Grid.Row="7" Grid.Column="3">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Hombre</x:String>
+                        <x:String>Mujer</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <!-- Columna 4 -->
+            <Label Text="Dirección" FontSize="12" VerticalOptions="Center" Grid.Row="8" Grid.Column="0" />
+            <Entry x:Name="DireccionEntry" Placeholder="Dirección del paciente" WidthRequest="200" Grid.Row="8" Grid.Column="1" />
+            <Label Text="Última Actualización" FontSize="12" VerticalOptions="Center" Grid.Row="8" Grid.Column="2" />
+            <DatePicker x:Name="UltimaActualizacionPicker" WidthRequest="200" Grid.Row="8" Grid.Column="3" />
+            
+            <Label Text="Usuario" FontSize="12" VerticalOptions="Center" Grid.Row="9" Grid.Column="0" />
+            <Entry x:Name="UsuarioEntry" Placeholder="Usuario" WidthRequest="200" Grid.Row="9" Grid.Column="1" />
+
+            <!-- Botones de Registro y Cancelar -->
+            <StackLayout Grid.Row="10   " Grid.Column="0" Grid.ColumnSpan="4" Padding="35" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="20">
+                <Button Text="Registrar" TextColor="Black" BackgroundColor="#73F6A6" HorizontalOptions="Center" Clicked="Button_Clicked" WidthRequest="150"/>
+                <Button Text="Cancelar" BackgroundColor="#F23456" HorizontalOptions="Center" WidthRequest="150" Clicked="Button_Clicked_1"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
+

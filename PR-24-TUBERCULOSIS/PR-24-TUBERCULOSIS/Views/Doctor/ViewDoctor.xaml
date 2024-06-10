@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Doctor.ViewDoctor"
+                          Title="">
+    <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Start" Grid.Row="1" Margin="10">
+
+            <Button Text="Volver"
+                     BackgroundColor="#607D8B"
+                     TextColor="White"
+                    Clicked="Button_Clicked_1"/>
+            
+
+
+
+            <Button Text="Crear Doctor"
+                     BackgroundColor="#73F6A6"
+                        TextColor="Black"
+                    Margin="10,0,0,0"  Clicked="OnCrearDoctorClicked"/>
+
+        </StackLayout>
+
+        <Label Text="Lista Doctores"
+           FontAttributes="Bold"
+                       FontFamily="bold"
+                       FontSize="Large"
+           TextColor="Black"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           Grid.Row="0" />
+
+
+        <Grid Grid.Row="2" BackgroundColor="Black" Padding="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+
+
+
+                <!--<ColumnDefinition Width="*" />-->
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="0" Margin="5"/>
+            <Label Text="Apellido" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="1" Margin="5"/>
+            <Label Text="CI" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="2" Margin="5"/>
+            <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" Grid.Column="3" Margin="5"/>
+        </Grid>
+
+
+        <ListView x:Name="GridData" ItemsSource="{Binding Medicos}"
+              Grid.Row="5">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="5" CornerRadius="0" BorderColor="Black" HasShadow="False" BackgroundColor="{Binding BackgroundColor}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+
+
+
+                                </Grid.ColumnDefinitions>
+                                
+
+                                <Label Text="{Binding primerNombre}"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Grid.Column="0"
+                                   Margin="5" />
+
+
+                                <Label Text="{Binding primerApellido}"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Grid.Column="1"
+                                   Margin="5" />
+
+                                <Label Text="{Binding ci}"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Grid.Column="2"
+                                Margin="5" />
+
+                                <Button Text="Editar Doctor"
+                                        HorizontalOptions="Center"
+                                         CommandParameter="{Binding .}"
+                                VerticalOptions="Center"
+                                Grid.Column="5"
+                                Margin="5"
+                                BackgroundColor="#73F6A6"
+                                TextColor="Black" 
+                                         Clicked="EditarDoctorClicked"/>
+
+                                <!--Command="{Binding Source={RelativeSource AncestorType={x:Type local:ListaPaciente}}, Path=NuevoEditarCommand}"-->
+
+
+                                <Button Text="Eliminar"
+                                 CommandParameter="{Binding .}"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 Grid.Column="6"
+                                 Margin="5"
+                                 BackgroundColor="#F23456"
+                                 TextColor="White" 
+                                        Clicked="EliminarClicked"/>
+                                <!--Command="{Binding Source={RelativeSource AncestorType={x:Type local:ListaMedico}}, Path=EliminarCommand}"-->
+
+
+
+                                
+                                <!--Command="{Binding Source={RelativeSource AncestorType={x:Type local:ListaMedico}}, Path=DetalleCommand}"-->
+
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

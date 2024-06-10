@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Login.RecuperarContrasena"
+             Title="">
+    <Grid RowDefinitions=".3*, .7*"
+          VerticalOptions="Center"
+          HorizontalOptions="Center">
+        <Image Aspect="AspectFill"></Image>
+        <Grid BackgroundColor="#489CC1" Opacity=".9"></Grid>
+        <Grid Grid.Row="1">
+            <RoundRectangle Margin="-5,-30,-5,-2"
+                            CornerRadius="30,30,0,0"
+                            Fill="White"></RoundRectangle>
+            <VerticalStackLayout Margin="30,0,30,0"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 Spacing="20">
+                <Label FontAttributes="Bold"
+                       FontFamily="bold"
+                       FontSize="Large"
+                       Padding="20"
+                       Text="Recuperar Contraseña"
+                       TextColor="#2D2D2D"
+                       HorizontalOptions="Center"></Label>
+
+                <Entry Placeholder="Ingrese su correo electronico"
+                       x:Name="CorreoEntry"
+                       VerticalOptions="Center"
+                       HeightRequest="60"
+                       WidthRequest="300"
+                       HorizontalOptions="Center"></Entry>
+
+                <Entry Placeholder="Ingrese su usuario"
+                       x:Name="UsuarioEntry"
+                       VerticalOptions="Center"
+                       HeightRequest="60"
+                       WidthRequest="300"
+                       HorizontalOptions="Center"></Entry>
+
+                <Label Margin="0,20,0,-10"
+                       HorizontalOptions="Center"
+                       Text=""
+                       x:Name="lblError"
+                       TextColor="#F23456"></Label>
+
+                <Button Margin="0,20,0,0"
+                        BackgroundColor="#73F6A6"
+                        HeightRequest="60"
+                        WidthRequest="300"
+                        Text="Recuperar Contraseña"
+                        TextColor="Black"
+                        x:Name="Recuperar_Contrasena"
+                        HorizontalOptions="Center"
+                        CornerRadius="30"
+                        Clicked="Recuperar_Contrasena_Clicked"></Button>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

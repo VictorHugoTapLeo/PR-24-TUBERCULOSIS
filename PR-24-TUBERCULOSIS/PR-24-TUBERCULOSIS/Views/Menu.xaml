@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Menu"
+             Title="">
+
+    <ScrollView>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+
+            <Label Text="Menu" FontAttributes="Bold"
+                   FontFamily="bold"
+                   FontSize="Header" HorizontalOptions="Center" />
+
+
+            <StackLayout Spacing="10">
+
+                <Button Text="Registrar Paciente" x:Name="RegistrarPaciente" BackgroundColor="Black" TextColor="White" Clicked="RegistrarPacientes_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+                        WidthRequest="300"/>
+                <Button Text="Lista Pacientes" x:Name="ListaPacientes" BackgroundColor="Black" TextColor="White" Clicked="ListaPacientes_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+                        WidthRequest="300"/>
+                <Button Text="Lista Pacientes Pre Registro" x:Name="ListaPacientesPreRegistro" BackgroundColor="Black" TextColor="White" Clicked="ListaPacientesPreRegistro_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+                        WidthRequest="300"/>
+
+                
+                <Button Text="Cambiar Contraseña" BorderColor="Black" BackgroundColor="White" TextColor="Black" Clicked="CambiarContraseña_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+                        WidthRequest="300"/>
+
+                <Button Text="Registrar Doctor" x:Name="RegistrarDoctor" BackgroundColor="#73F6A6" TextColor="Black" Clicked="RegistrarDoctor_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+                        WidthRequest="300"/>
+                <Button Text="Lista Doctores" x:Name="ListaDoctores" BackgroundColor="#73F6A6" TextColor="Black" Clicked="ListaDoctores_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+                        WidthRequest="300"/>
+                <Button Text="Gererador Qr" x:Name="GeneradorQr" BackgroundColor="#73F6A6" TextColor="Black" Clicked="GeneradorQr_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+                        WidthRequest="300"/>
+
+                <Button Text="Cerrar Sesión" BackgroundColor="#F23456" Clicked="CerrarSesion_Clicked" CornerRadius="15" VerticalOptions="Center" HeightRequest="60"
+                        WidthRequest="300" />
+
+            </StackLayout>
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

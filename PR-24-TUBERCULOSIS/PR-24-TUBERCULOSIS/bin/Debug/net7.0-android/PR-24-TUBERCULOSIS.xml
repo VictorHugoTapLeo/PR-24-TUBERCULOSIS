@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PR-24-TUBERCULOSIS</name>
+    </assembly>
+    <members>
+        <member name="M:PR_24_TUBERCULOSIS.Model.ClControlTratamiento.#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            insert
+            </summary>
+            <param name="idControl"></param>
+            <param name="basiloscopia"></param>
+            <param name="cultivo"></param>
+            <param name="aumentoDosis"></param>
+            <param name="personaIdPersona"></param>
+            <param name="ordenIdOrden"></param>
+        </member>
+        <member name="M:PR_24_TUBERCULOSIS.Model.KardexModel.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Insert
+            </summary>
+            <param name="tipoTuberculosis"></param>
+            <param name="saturacion"></param>
+            <param name="frecuenciaCardiaca"></param>
+            <param name="frecuenciaRespiratoria"></param>
+            <param name="diagnosticadoPor"></param>
+            <param name="idPersona"></param>
+            <param name="docificacionMedicamentos"></param>
+            <param name="numeroDosis"></param>
+            <param name="cultivo"></param>
+            <param name="basiloscopia"></param>
+        </member>
+        <member name="M:PR_24_TUBERCULOSIS.Model.KardexModel.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.Byte,System.DateTime,System.DateTime,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            GET
+            </summary>
+            <param name="idKardex"></param>
+            <param name="tipoTuberculosis"></param>
+            <param name="saturacion"></param>
+            <param name="frecuenciaCardiaca"></param>
+            <param name="frecuenciaRespiratoria"></param>
+            <param name="diagnosticadoPor"></param>
+            <param name="estado"></param>
+            <param name="fechacreacion"></param>
+            <param name="fechaactualizacion"></param>
+            <param name="idPersona"></param>
+            <param name="docificacionMedicamentos"></param>
+            <param name="numeroDosis"></param>
+            <param name="cultivo"></param>
+            <param name="basiloscopia"></param>
+        </member>
+        <member name="M:PR_24_TUBERCULOSIS.Model.Persona.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="idPersona"></param>
+            <param name="primerNombre"></param>
+            <param name="segundoNombre"></param>
+            <param name="primerApellido"></param>
+            <param name="segundoApellido"></param>
+            <param name="ci"></param>
+            <param name="celular"></param>
+            <param name="usuario"></param>
+            <param name="codigoPersonal"></param>
+        </member>
+        <member name="M:PR_24_TUBERCULOSIS.Model.PersonalSalud.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Byte,System.Int32,System.String)">
+            <summary>
+            GET
+            </summary>
+            <param name="idPersonal"></param>
+            <param name="codigoPersonal"></param>
+            <param name="destinoP"></param>
+        </member>
+        <member name="M:PR_24_TUBERCULOSIS.Model.PersonalSalud.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            GET2
+            </summary>
+            <param name="idPersona"></param>
+            <param name="primerNombre"></param>
+            <param name="segundoNombre"></param>
+            <param name="primerApellido"></param>
+            <param name="segundoApellido"></param>
+            <param name="ci"></param>
+            <param name="celular"></param>
+            <param name="usuario"></param>
+            <param name="codigoPersonal"></param>
+        </member>
+        <member name="M:PR_24_TUBERCULOSIS.Model.SeguimientoPeso.#ctor(System.Byte,System.Int32)">
+            <summary>
+            insert
+            </summary>
+            <param name="peso"></param>
+            <param name="idPersona"></param>
+        </member>
+        <member name="M:PR_24_TUBERCULOSIS.Model.SeguimientoPeso.#ctor(System.Int32,System.Byte,System.Int32,System.Byte,System.DateTime,System.DateTime)">
+            <summary>
+            get
+            </summary>
+            <param name="id"></param>
+            <param name="peso"></param>
+            <param name="idPersona"></param>
+            <param name="estado"></param>
+            <param name="fechacreacion"></param>
+            <param name="fechaactualizacion"></param>
+        </member>
+    </members>
+</doc>

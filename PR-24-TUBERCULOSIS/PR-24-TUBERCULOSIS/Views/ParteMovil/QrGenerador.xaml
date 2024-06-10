@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.ParteMovil.QrGenerador"
+             Title="">
+    <VerticalStackLayout VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand">
+
+        <Grid VerticalOptions="FillAndExpand"
+              HorizontalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+            <StackLayout Grid.Column="1"
+                         VerticalOptions="CenterAndExpand">
+                <Label x:Name="NombrePacienteLabel" 
+                       FontAttributes="Bold"
+                       FontFamily="bold"
+                       FontSize="Large"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center"
+                       Text="Usuario: Nombre Apellido"/>
+            </StackLayout>
+        </Grid>
+        <Frame Grid.Column="0"
+                   BorderColor="LightSlateGray"
+                   BackgroundColor="White"
+                   Padding="10">
+            <Image x:Name="QrCodeImage"
+                       HeightRequest="200"
+                       WidthRequest="200"/>
+        </Frame>
+
+        <Button x:Name="GenerarQr"
+                Text="Generar QR"
+                TextColor="Black" 
+                BackgroundColor="#73F6A6"
+                Clicked="GenerarQr_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="End" />
+    </VerticalStackLayout>
+</ContentPage>

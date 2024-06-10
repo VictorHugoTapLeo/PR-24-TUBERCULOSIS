@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR_24_TUBERCULOSIS.Views.Kardex.CrearKardex"
+             Title="">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Registrar Kardex" HorizontalOptions="Center" FontAttributes="Bold"
+                       FontFamily="bold"
+                       FontSize="Large" Margin="0,10,0,20" />
+
+            <Grid Padding="20" RowSpacing="10" ColumnSpacing="20">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Columnas -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Columna 1 -->
+                <Label Text="Tipo de Tuberculosis" Grid.Row="0" Grid.Column="0" Margin="0,10,0,5"/>
+                <Picker x:Name="TipoTuberculosis" Grid.Row="1" Grid.Column="0" Margin="0,5">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Pleural</x:String>
+                            <x:String>Ganglionar</x:String>
+                            <x:String>Genitourinaria</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+                <Label Text="Docificacion Medicamentos" Grid.Row="2" Grid.Column="0" Margin="0,10,0,5"/>
+                <Entry x:Name="DocificacionMedicamentos" Grid.Row="3" Grid.Column="0" Margin="0,5"/>
+
+                <Label Text="Frecuencia Cardiaca" Grid.Row="4" Grid.Column="0" Margin="0,10,0,5"/>
+                <Entry x:Name="FrecuenciaCardiaca" Grid.Row="5" Grid.Column="0" Margin="0,5"/>
+
+                <!-- Columna 2 -->
+                <Label Text="Cultivo" Grid.Row="0" Grid.Column="1" Margin="0,10,0,5"/>
+                <Entry x:Name="Cultivo" Grid.Row="1" Grid.Column="1" Margin="0,5"/>
+
+                <Label Text="Numero Dosis" Grid.Row="2" Grid.Column="1" Margin="0,10,0,5"/>
+                <Entry x:Name="NumeroDosis" Grid.Row="3" Grid.Column="1" Margin="0,5"/>
+
+                <!-- Columna 3 -->
+                <Label Text="Basiloscopia" Grid.Row="0" Grid.Column="2" Margin="0,10,0,5"/>
+                <Entry x:Name="Basiloscopia" Grid.Row="1" Grid.Column="2" Margin="0,5"/>
+
+                <Label Text="Saturacion" Grid.Row="2" Grid.Column="2" Margin="0,10,0,5"/>
+                <Entry x:Name="Saturacion" Grid.Row="3" Grid.Column="2" Margin="0,5"/>
+
+                <Label Text="Frecuencia Respiratoria" Grid.Row="4" Grid.Column="2" Margin="0,10,0,5"/>
+                <Entry x:Name="FrecuenciaRespiratoria" Grid.Row="5" Grid.Column="2" Margin="0,5"/>
+
+                <Grid Grid.Row="12" Grid.ColumnSpan="3" VerticalOptions="End">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="Registrar" BackgroundColor="#73F6A6" TextColor="Black" Grid.Column="0" WidthRequest="150" Margin="0,10" Clicked="OnRegistrarClicked"/>
+                    <Button Text="Cancelar" BackgroundColor="#F23456" TextColor="White" Grid.Column="1" WidthRequest="150" Margin="0,10" Clicked="OnCancelarClicked"/>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
