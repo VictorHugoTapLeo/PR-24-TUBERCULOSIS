@@ -41,7 +41,7 @@ namespace PR_24_TUBERCULOSIS.Implementacion
         public PersonalSalud Get(int id)
         {
             PersonalSalud e = null;
-            query = @"SELECT  p.idpersona, p.primerNombre,p.segundoNombre, p.primerApellido, p.segundoApellido, p.carnetIdentidad, p.numeroCelular, p.usuario,p.correo, 
+            query = @"SELECT  p.idpersona , p.primerNombre,p.segundoNombre, p.primerApellido, p.segundoApellido, p.carnetIdentidad, p.numeroCelular, p.usuario,p.correo, 
                 p.rol,s.codigo
                 FROM persona p
                 INNER JOIN personalsalud s ON p.idPersona = s.idPersonalSalud
@@ -102,32 +102,55 @@ namespace PR_24_TUBERCULOSIS.Implementacion
 
         public int Insert(PersonalSalud t)
         {
-            query = @"
-                    INSERT INTO persona (primerNombre, segundoNombre, primerApellido, segundoApellido, carnetIdentidad, numeroCelular, usuario,contra,correo,rol)
-                    VALUES (@primerNombre, @segundoNombre, @primerApellido, @segundoApellido, @carnetIdentidad, @numeroCelular, @usuario,@contra,@correo,@rol);
+            int id = -1;
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                MySqlTransaction transaction = conn.BeginTransaction();
+                try
+                {
+                   
+                    query = @"
+                INSERT INTO persona (primerNombre, segundoNombre, primerApellido, segundoApellido, carnetIdentidad, numeroCelular, usuario, contra, correo, rol)
+                VALUES (@primerNombre, @segundoNombre, @primerApellido, @segundoApellido, @carnetIdentidad, @numeroCelular, @usuario, @contra, @correo, @rol);
+                SELECT LAST_INSERT_ID();";
 
-                    INSERT INTO PersonalSalud (idPersonalSalud, codigo,Hospital_idHospital)
-                    VALUES (@idPersonalSalud,@codigo, 1);";
+                    MySqlCommand command = new MySqlCommand(query, conn, transaction);
+                    command.Parameters.AddWithValue("@primerNombre", t.primerNombre);
+                    command.Parameters.AddWithValue("@segundoNombre", t.segundoNombre);
+                    command.Parameters.AddWithValue("@primerApellido", t.primerApellido);
+                    command.Parameters.AddWithValue("@segundoApellido", t.segundoApellido);
+                    command.Parameters.AddWithValue("@carnetIdentidad", t.ci);
+                    command.Parameters.AddWithValue("@numeroCelular", t.celular);
+                    command.Parameters.AddWithValue("@usuario", t.usuario);
+                    command.Parameters.AddWithValue("@contra", t.contrasena);
+                    command.Parameters.AddWithValue("@correo", t.email);
+                    command.Parameters.AddWithValue("@rol", t.rol);
 
+                    id = Convert.ToInt32(command.ExecuteScalar());
 
+          
+                    query = @"
+                INSERT INTO PersonalSalud (idPersonalSalud, codigo, Hospital_idHospital)
+                VALUES (@idPersonalSalud, @codigo, 1);";
 
-            int id = GetLastPersonID();
-            MySqlCommand command = CreateBasicCommand(query);
-            command.Parameters.AddWithValue("@primerNombre", t.primerNombre);
-            command.Parameters.AddWithValue("@segundoNombre", t.segundoNombre);
-            command.Parameters.AddWithValue("@primerApellido", t.primerApellido);
-            command.Parameters.AddWithValue("@segundoApellido", t.segundoApellido);
-            command.Parameters.AddWithValue("@carnetIdentidad", t.ci);
-            command.Parameters.AddWithValue("@numeroCelular", t.celular);
-            command.Parameters.AddWithValue("@usuario", t.usuario);
-            command.Parameters.AddWithValue("@contra", t.contrasena);
-            command.Parameters.AddWithValue("@correo", t.email);
-            command.Parameters.AddWithValue("@rol", t.rol);
-            command.Parameters.AddWithValue("@idPersonalSalud", id);
-            command.Parameters.AddWithValue("@codigo", t.codigoPersonalSalud);
+                    command = new MySqlCommand(query, conn, transaction);
+                    command.Parameters.AddWithValue("@idPersonalSalud", id);
+                    command.Parameters.AddWithValue("@codigo", t.codigoPersonalSalud);
 
-            return ExecuteBasicCommand(command);
+                    command.ExecuteNonQuery();
+
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    throw ex;
+                }
+            }
+            return id;
         }
+
 
         public DataTable Select()
         {
@@ -144,7 +167,7 @@ namespace PR_24_TUBERCULOSIS.Implementacion
          //       P.estado = 1  AND p.rol = 'doctor'; ";
             query = @"SELECT idpersona AS id, primerNombre AS Nombre , primerApellido AS Apellido, segundoApellido,carnetIdentidad AS CI
              
-            FROM tuberculosis.persona AS P
+            FROM persona AS P
             WHERE 
                 estado = 1  AND rol = 'doctor';";
             MySqlCommand command = CreateBasicCommand(query);

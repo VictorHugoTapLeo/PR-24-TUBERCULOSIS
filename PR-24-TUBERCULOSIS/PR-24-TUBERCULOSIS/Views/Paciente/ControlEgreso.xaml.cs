@@ -1,5 +1,7 @@
 namespace PR_24_TUBERCULOSIS.Views.Paciente;
 using MySql.Data.MySqlClient;
+using PR_24_TUBERCULOSIS.Implementacion;
+
 public partial class ControlEgreso : ContentPage
 {
     private int pacienteId = 9;
@@ -19,8 +21,9 @@ public partial class ControlEgreso : ContentPage
 
         try
         {
-            string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
-            using (var conn = new MySqlConnection(connectionString))
+            var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
+
+            using (var conn = new MySqlConnection(baseImpl.connectionString))
             {
                 await conn.OpenAsync();
 
@@ -35,6 +38,8 @@ public partial class ControlEgreso : ContentPage
             }
 
             await DisplayAlert("Éxito", "Condición registrada correctamente.", "OK");
+            var navigation = Application.Current.MainPage.Navigation;
+            await navigation.PushAsync(new MenuActividades());
         }
         catch (Exception ex)
         {
@@ -47,4 +52,29 @@ public partial class ControlEgreso : ContentPage
         var navigation = Application.Current.MainPage.Navigation;
         await navigation.PushAsync(new MenuActividades());
     }
+	private bool EsBaciloscopiaValida(out string campoInvalido)
+	{
+		campoInvalido = string.Empty;
+
+		// Verificar si se ha seleccionado una opción válida en el Picker de Baciloscopia
+		if (ControlEgresoPicker.SelectedIndex == -1)
+		{
+			campoInvalido = "Debe seleccionar una opción para Baciloscopia.";
+			return false;
+		}
+
+		return true;
+	}
+	private bool CamposSonValidos(out string campoInvalido)
+	{
+		campoInvalido = string.Empty;
+
+		// Validar Baciloscopia
+		if (!EsBaciloscopiaValida(out campoInvalido))
+		{
+			return false;
+		}
+		return true;
+	}
+
 }

@@ -2,6 +2,7 @@ using Microsoft.Maui;
 using MySql.Data.MySqlClient;
 using PR_24_TUBERCULOSIS.Implementacion;
 using PR_24_TUBERCULOSIS.Model;
+using PR_24_TUBERCULOSIS.Views.Listas;
 using System.Data;
 using System.Xml.Linq;
 
@@ -32,6 +33,8 @@ public partial class RegistroSeguimientoPeso : ContentView
             if (n > 0)
             {
                 await Application.Current.MainPage.DisplayAlert("Éxito", "Registro Insertado", "OK");
+                var navigation = Application.Current.MainPage.Navigation;
+                await navigation.PushAsync(new ListaSeguimientoPeso());
             }
             else
             {

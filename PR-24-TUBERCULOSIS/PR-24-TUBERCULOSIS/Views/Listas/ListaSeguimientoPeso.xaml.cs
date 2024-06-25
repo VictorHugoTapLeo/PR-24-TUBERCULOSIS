@@ -44,7 +44,7 @@ public partial class ListaSeguimientoPeso : ContentPage
                             Children =
                             {
                                 new Label { Text = "Fecha de Registro: " + item.FechaRegistro },
-                                new Label { Text = "Peso: " + item.peso },
+                                new Label { Text = "Peso: " + item.peso +" Kilos"},
                                 new Label { Text = "Paciente: " + item.Paciente }
                             }
                         }

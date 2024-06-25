@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QVeiF6PdX7/HDBEwETROTPWZ4b/lKZWVCDHdCoFnZm3Udn+dYexUZwM2hmhwYWOZ1MuKE2vwcwVYnIZSlF+LYg==",
+  "dgSpecHash": "MSmS0ZFq+foXg2wL4T7UKBsqVxlytjHD79/9rW6WdZfHFb1FO1JRKLqr9+5eg1dvpWQzssvT9tPds/akqh4P5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\victo\\Desktop\\git\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj",
+  "projectFilePath": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",

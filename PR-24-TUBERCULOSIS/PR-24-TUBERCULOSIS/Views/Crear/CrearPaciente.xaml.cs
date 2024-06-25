@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 using PR_24_TUBERCULOSIS.Views;
 using PR_24_TUBERCULOSIS.Views.Paciente;
 using PR_24_TUBERCULOSIS.Tools;
+using PR_24_TUBERCULOSIS.Implementacion;
 namespace PR_24_TUBERCULOSIS.Views;
 
 public partial class CrearPaciente : ContentPage
@@ -29,21 +30,34 @@ public partial class CrearPaciente : ContentPage
         // Inicializa el campo inválido como vacío
         campoInvalido = string.Empty;
 
-        // Validar campos de texto
-
-        if (!EsTextoValido(PrimerApellidoEntry.Text))
+		// Validar campos de texto
+		if (!EsTextoValido(PrimerNombreEntry.Text))
+		{
+			campoInvalido = "Primer Nombre(solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(SegundoNombreEntry.Text))
+		{
+			campoInvalido = "segundo Nombre(solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(PrimerApellidoEntry.Text))
         {
-            campoInvalido = "Primer Apellido";
+            campoInvalido = "Primer Apellido(solo letras)";
             return false;
         }
         if (!EsTextoValido(SegundoApellidoEntry.Text))
         {
-            campoInvalido = "Segundo Apellido";
+            campoInvalido = "Segundo Apellido(solo letras)";
             return false;
         }
 
-
-        if (!EsNumeroCelularValido(numeroCelularEntry.Text))
+		if (!EsCorreoValido(CorreoEntry.Text))
+		{
+			campoInvalido = "Correo electrónico no válido";
+			return false;
+		}
+		if (!EsNumeroCelularValido(numeroCelularEntry.Text))
         {
             campoInvalido = "Número Celular (debe tener 8 dígitos)";
             return false;
@@ -51,22 +65,31 @@ public partial class CrearPaciente : ContentPage
 
         if (!EsNumeroValido(NumAux1Entry.Text))
         {
-            campoInvalido = "Número Auxiliar 1";
+            campoInvalido = "Número Auxiliar 1 (debe tener 8 dígitos)";
             return false;
         }
         
         if (!EsNumeroValido(NumAux2Entry.Text))
         {
-            campoInvalido = "Número Auxiliar 2";
+            campoInvalido = "Número Auxiliar 2 (debe tener 8 dígitos)";
             return false;
         }
         if (GeneroPicker.SelectedIndex == -1)
         {
-            campoInvalido = "Género";
+            campoInvalido = "Género ";
             return false;
         }
-
-        return true;
+		if (!EsTextoValido(DireccionEntry.Text))
+		{
+			campoInvalido = "Direccion (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(UsuarioEntry.Text))
+		{
+			campoInvalido = "usuario (solo letras)";
+			return false;
+		}
+		return true;
     }
 
     private bool EsTextoValido(string texto)
@@ -81,26 +104,28 @@ public partial class CrearPaciente : ContentPage
         return !string.IsNullOrWhiteSpace(numero) && Regex.IsMatch(numero, @"^\d+$");
     }
 
-    private bool EsNumeroCelularValido(string numeroCelular)
-    {
-        // El número de celular debe tener exactamente 8 dígitos
-        return !string.IsNullOrWhiteSpace(numeroCelular) && Regex.IsMatch(numeroCelular, @"^\d{8}$");
-    }
+	private bool EsNumeroCelularValido(string numeroCelular)
+	{
+		// El número de celular debe tener exactamente 8 dígitos y comenzar con 7 o 6
+		return !string.IsNullOrWhiteSpace(numeroCelular) && Regex.IsMatch(numeroCelular, @"^[76]\d{7}$");
+	}
 
-    private bool EsSexoValido(string sexo)
-    {
-        // El sexo debe ser '1' para masculino o '0' para femenino
-        return sexo == "1" || sexo == "0";
-    }
+	private bool EsCorreoValido(string correo)
+	{
+		// Expresión regular para validar formato de correo electrónico con dominios específicos
+		string patronCorreo = @"^\w+([-+.']\w+)*@(gmail\.com|est\.univalle\.edu\.co|univalle\.edu\.co)$";
 
-    private async Task InsertarDatosAsync()
+		return !string.IsNullOrWhiteSpace(correo) && Regex.IsMatch(correo, patronCorreo);
+	}
+
+	private async Task InsertarDatosAsync()
     {
         string contra = GenerarContraseña(8);
         try
         {
-            string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+            var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-            using (var conn = new MySqlConnection(connectionString))
+            using (var conn = new MySqlConnection(baseImpl.connectionString))
             {
                 await conn.OpenAsync();
 
@@ -130,8 +155,10 @@ public partial class CrearPaciente : ContentPage
                     var cmdInsertPaciente = new MySqlCommand(sqlInsertPaciente, conn, transaction);
 
                     cmdInsertPaciente.Parameters.AddWithValue("@idPaciente", idPersona);
-                    cmdInsertPaciente.Parameters.AddWithValue("@latitud", double.Parse(LatitudEntry.Text));
-                    cmdInsertPaciente.Parameters.AddWithValue("@longitud", double.Parse(LongitudEntry.Text));
+                    //cmdInsertPaciente.Parameters.AddWithValue("@latitud", double.Parse(LatitudEntry.Text));
+                    //cmdInsertPaciente.Parameters.AddWithValue("@longitud", double.Parse(LongitudEntry.Text));
+                    cmdInsertPaciente.Parameters.AddWithValue("@latitud", 123);
+                    cmdInsertPaciente.Parameters.AddWithValue("@longitud", 123);
                     cmdInsertPaciente.Parameters.AddWithValue("@condicion", CondicionPicker.SelectedItem);
                     cmdInsertPaciente.Parameters.AddWithValue("@fechaNacimiento", FechaNacimientoPicker.Date);
                     cmdInsertPaciente.Parameters.AddWithValue("@ultimaActualizacion", UltimaActualizacionPicker.Date);
@@ -154,6 +181,7 @@ public partial class CrearPaciente : ContentPage
 
             // Mostrar un mensaje de éxito o realizar otras acciones necesarias
             await DisplayAlert("Registro exitoso", "Se ha enviado la contraseña por correo electrónico.", "OK");
+            await Navigation.PushAsync(new NavigationPage(new ContentPage { Content = new ListaPreRegistro() }));
 
         }
         catch (Exception ex)
@@ -168,7 +196,6 @@ public partial class CrearPaciente : ContentPage
         if (CamposSonValidos(out campoInvalido))
         {
             await InsertarDatosAsync();
-            await Navigation.PushAsync(new NavigationPage(new ContentPage { Content = new ListaPreRegistro() }));
         }
         else
         {

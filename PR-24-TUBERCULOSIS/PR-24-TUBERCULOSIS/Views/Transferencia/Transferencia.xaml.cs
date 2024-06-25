@@ -1,14 +1,17 @@
 namespace PR_24_TUBERCULOSIS.Views.Transferencia;
 using MySql.Data.MySqlClient;
+using PR_24_TUBERCULOSIS.Implementacion;
 using PR_24_TUBERCULOSIS.Model;
 using PR_24_TUBERCULOSIS.Views.Paciente;
 using System.Data;
+using System.Text.RegularExpressions;
+
 public partial class Transferencia : ContentPage
 {
     //metodo para obtner id nesesario
     private int personaIds = AtributosPaciente.UserId; // Define el ID estático del paciente
     public Transferencia()
-	{
+    {
         InitializeComponent();
         CargarDatosPaciente();
         CargarDatosPersona();
@@ -21,9 +24,9 @@ public partial class Transferencia : ContentPage
     {
         try
         {
-            string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+            var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-            using (var conn = new MySqlConnection(connectionString))
+            using (var conn = new MySqlConnection(baseImpl.connectionString))
             {
                 await conn.OpenAsync();
 
@@ -160,6 +163,8 @@ public partial class Transferencia : ContentPage
 
             // Mostrar mensaje de éxito
             await DisplayAlert("Éxito", "Datos insertados correctamente.", "OK");
+            var navigation = Application.Current.MainPage.Navigation;
+            await navigation.PushAsync(new MenuActividades());
         }
         catch (Exception ex)
         {
@@ -257,7 +262,15 @@ public partial class Transferencia : ContentPage
 
     private async void Registrar_Clicked(object sender, EventArgs e)
     {
-        await InsertarDatosAsync();
+        string campoInvalido;
+        if (CamposSonValidos(out campoInvalido))
+        {
+            await InsertarDatosAsync();
+        }
+        else
+        {
+            await DisplayAlert("Error", $"Por favor, complete el campo '{campoInvalido}' correctamente.", "OK");
+        }
     }
     private async void CargarDatosPaciente()
     {
@@ -292,9 +305,9 @@ public partial class Transferencia : ContentPage
     }
     public async Task<Personas> ObtenerPersonaAsync(int idPersona)
     {
-        string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+        var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-        using (var conn = new MySqlConnection(connectionString))
+        using (var conn = new MySqlConnection(baseImpl.connectionString))
         {
             await conn.OpenAsync();
 
@@ -322,9 +335,9 @@ public partial class Transferencia : ContentPage
     }
     public async Task<Personas> ObtenerPacienteAsync(int idPersona)
     {
-        string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+        var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-        using (var conn = new MySqlConnection(connectionString))
+        using (var conn = new MySqlConnection(baseImpl.connectionString))
         {
             await conn.OpenAsync();
 
@@ -352,9 +365,9 @@ public partial class Transferencia : ContentPage
 
     public async Task<Personas> ObtenerDoctorAsync(int idUsuario)
     {
-        string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+        var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-        using (var conn = new MySqlConnection(connectionString))
+        using (var conn = new MySqlConnection(baseImpl.connectionString))
         {
             await conn.OpenAsync();
 
@@ -382,17 +395,17 @@ public partial class Transferencia : ContentPage
 
     private async void CargarDatosDoctor(int idUsuario)
     {
-    	var doctor = await ObtenerDoctorAsync(idUsuario);
+        var doctor = await ObtenerDoctorAsync(idUsuario);
 
-    	if (doctor != null)
-    	{
-    		nombreApellidoRefEntry.Text = $"{doctor.Nombre} {doctor.Apellido}";
-    		telefonoRefEntry.Text = doctor.Telefono;
-    	}
-    	else
-    	{
-    		await DisplayAlert("Error", "No se encontraron datos para el doctor.", "OK");
-    	}
+        if (doctor != null)
+        {
+            nombreApellidoRefEntry.Text = $"{doctor.Nombre} {doctor.Apellido}";
+            telefonoRefEntry.Text = doctor.Telefono;
+        }
+        else
+        {
+            await DisplayAlert("Error", "No se encontraron datos para el doctor.", "OK");
+        }
     }
 
     private async void Button_Clicked(object sender, EventArgs e)
@@ -400,4 +413,208 @@ public partial class Transferencia : ContentPage
         var navigation = Application.Current.MainPage.Navigation;
         await navigation.PushAsync(new MenuActividades());
     }
+
+    private bool CamposSonValidos(out string campoInvalido)
+    {
+        // Inicializa el campo inválido como vacío
+        campoInvalido = string.Empty;
+
+		// Validar campos de texto
+		///origen
+		// Validar selección de tipo de transferencia
+		if (!radioButton1.IsChecked && !radioButton2.IsChecked && !radioButton3.IsChecked)
+		{
+			campoInvalido = "Tipo de transferencia";
+			return false;
+		}
+		if (!EsTextoValido(sedeOrigenEntry.Text))
+		{
+			campoInvalido = "Sede de Destino (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(coordinacionSaludEntry.Text))
+		{
+			campoInvalido = "Coordinacion de red de Salud (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(municipioEntry.Text))
+		{
+			campoInvalido = "municipio de destino (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(establecimientoOrigenEntry.Text))
+		{
+			campoInvalido = "establecimiento de destino (solo letras)";
+			return false;
+		}
+		if (!EsNumeroCelularValido(telefonoEntry.Text))
+		{
+			campoInvalido = "telefono de destino (tiene que tener 8 digitos)";
+			return false;
+		}
+		//destino
+		if (!EsTextoValido(sedeDestinoEntry.Text))
+        {
+            campoInvalido = "Sede de Destino (solo letras)";
+            return false;
+        }
+        if (!EsTextoValido(coordinacionSaludDestinoEntry.Text))
+        {
+            campoInvalido = "Coordinacion de red de Salud de destino (solo letras)";
+            return false;
+        }
+        if (!EsTextoValido(municipioDestinoEntry.Text))
+        {
+            campoInvalido = "municipio de destino (solo letras)";
+            return false;
+        }
+        if (!EsTextoValido(establecimientoDestinoEntry.Text))
+        {
+            campoInvalido = "establecimiento de destino (solo letras)";
+            return false;
+        }
+		if (!EsTextoValido(direccionDestinoEntry.Text))
+		{
+			campoInvalido = "establecimiento de destino (solo letras)";
+			return false;
+		}
+
+		//datos generales
+		if (!EsEdadValida(edadEntry.Text, out int edad))
+		{
+			campoInvalido = "Edad de datos generales (solo numeros)";
+			return false;
+		}
+
+		//criterio
+
+		// Validar selección de tipo de criterio
+		if (!Criterios1.IsChecked && !Criterios2.IsChecked && !Criterios3.IsChecked &&
+			!Criterios4.IsChecked && !Criterios5.IsChecked && !Criterios6.IsChecked && !Criterios7.IsChecked)
+		{
+			campoInvalido = "Tipo de criterio";
+			return false;
+		}
+		//resultadobacterologia
+		if (!EsTextoValido(baciloscopiaEntry.Text))
+		{
+			campoInvalido = "Baciloscopia de diagnóstico (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(cultivoDiagnosticoEntry.Text))
+		{
+			campoInvalido = "Cultivo de diagnóstico (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(geneXpertEntry.Text))
+		{
+			campoInvalido = "GeneXpert/MTB-RIF u otro (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(pruebaSensibilidadEntry.Text))
+		{
+			campoInvalido = "Prueba de sensibilidad y resistencia (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(ultimaBasiloscopiaEntry.Text))
+		{
+			campoInvalido = "Resultado de última baciloscopia (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(histopatologiaEntry.Text))
+		{
+			campoInvalido = "Resultado de histopatología (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(motivoEntry.Text))
+		{
+			campoInvalido = "Motivo (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(resultado1Entry.Text))
+		{
+			campoInvalido = "Resultado 1 (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(resultado2Entry.Text))
+		{
+			campoInvalido = "Resultado 2 (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(resultado3Entry.Text))
+		{
+			campoInvalido = "Resultado 3 (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(resultado4Entry.Text))
+		{
+			campoInvalido = "Resultado 4 (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(resultado5Entry.Text))
+		{
+			campoInvalido = "Resultado 5 (solo letras)";
+			return false;
+		}
+		if (!EsTextoValido(resultado6Entry.Text))
+		{
+			campoInvalido = "Resultado 6 (solo letras)";
+			return false;
+		}
+		//tratamiento
+		// Validar selección de tipo de tratamiento
+		if (!Tratamientos1.IsChecked && !Tratamientos2.IsChecked && !Tratamientos3.IsChecked &&
+			!Tratamientos4.IsChecked && !Tratamientos5.IsChecked)
+		{
+			campoInvalido = "Tipo de tratamiento";
+			return false;
+		}
+		//fase
+		// Validar selección de tipo de fase
+		if (!FaseActual1.IsChecked && !FaseActual2.IsChecked)
+		{
+			campoInvalido = "Tipo de fase";
+			return false;
+		}
+		if (!EsTextoValido(mesEntry.Text))
+		{
+			campoInvalido = "mes de tratamiento (solo letras)";
+			return false;
+		}
+		//persona que hace transferencia
+		if (!EsTextoValido(cargoRefEntry.Text))
+		{
+			campoInvalido = "mes de tratamiento (solo letras)";
+			return false;
+		}
+
+		return true;
+
+    }
+
+    private bool EsTextoValido(string texto)
+    {
+        // Solo permite letras y no debe estar vacío
+        return !string.IsNullOrWhiteSpace(texto) && Regex.IsMatch(texto, @"^[a-zA-Z]+$");
+    }
+	private bool EsNumeroCelularValido(string numeroCelular)
+	{
+		// El número de celular debe tener exactamente 8 dígitos y comenzar con 7 o 6
+		return !string.IsNullOrWhiteSpace(numeroCelular) && Regex.IsMatch(numeroCelular, @"^[76]\d{7}$");
+	}
+	private bool EsEdadValida(string edadTexto, out int edad)
+	{
+		// Inicializa la variable de salida
+		edad = 0;
+
+		// Verifica que el texto no esté vacío y que se pueda convertir a un número entero
+		if (int.TryParse(edadTexto, out edad))
+		{
+			// Verifica que la edad esté en el rango válido
+			return edad > 0 && edad <= 100;
+		}
+
+		return false;
+	}
+
 }

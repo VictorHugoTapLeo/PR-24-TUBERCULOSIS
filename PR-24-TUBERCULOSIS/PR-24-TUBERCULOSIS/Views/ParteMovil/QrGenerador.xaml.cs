@@ -1,5 +1,6 @@
 namespace PR_24_TUBERCULOSIS.Views.ParteMovil;
 using MySql.Data.MySqlClient;
+using PR_24_TUBERCULOSIS.Implementacion;
 using PR_24_TUBERCULOSIS.Model;
 using QRCoder;
 using System;
@@ -19,18 +20,18 @@ public partial class QrGenerador : ContentPage
     {
         try
         {
-            string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+            var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-            using (var conn = new MySqlConnection(connectionString))
+            using (var conn = new MySqlConnection(baseImpl.connectionString))
             {
                 await conn.OpenAsync();
 
                 // Actualiza la consulta SQL para usar parámetros
                 string sql = @"SELECT persona.primerNombre, persona.primerApellido, persona.carnetIdentidad, paciente.fechaNacimiento, persona.numeroCelular, paciente.numAuxiliar1,
-                                          (SELECT tipoTuberculosis FROM tuberculosis.cardex WHERE Persona_idPersona = @idPersona AND (SELECT MIN(idCardex))) AS 'Tipo Tuberculosis',
-                                          (SELECT fechaCreacion FROM tuberculosis.cardex WHERE Persona_idPersona = @idPersona AND (SELECT MIN(idCardex))) AS 'Fecha Inicio',
+                                          (SELECT tipoTuberculosis FROM tuberculosis.cardex WHERE Persona_idPersona = @idPersona AND (SELECT MIN(idCardex))LIMIT 1) AS 'Tipo Tuberculosis',
+                                          (SELECT fechaCreacion FROM tuberculosis.cardex WHERE Persona_idPersona = @idPersona AND (SELECT MIN(idCardex))LIMIT 1) AS 'Fecha Inicio',
                                           (SELECT CONCAT(primerNombre,' ',primerApellido) FROM tuberculosis.persona WHERE idPersona = 
-			(SELECT diagnosticadoPor FROM tuberculosis.cardex WHERE idPersona = Persona_idPersona LIMIT 1)) AS 'Diagnosticado Por'
+			                       (SELECT diagnosticadoPor FROM tuberculosis.cardex WHERE idPersona = Persona_idPersona LIMIT 1)) AS 'Diagnosticado Por'
                                    FROM tuberculosis.persona
                                    INNER JOIN tuberculosis.paciente ON persona.idPersona = paciente.idPaciente
                                    WHERE persona.idPersona = @idPersona";
@@ -90,9 +91,15 @@ public partial class QrGenerador : ContentPage
 
     private int ObtenerIdPersona()
     {
-        return 15;
+        //return 15;
         //este es para id Sesion solo crea qr de pacientes
-        //return SessionManager.UserId;
+        return SessionManager.UserId;
+    }
+
+    private async void Volver_Clicked(object sender, EventArgs e)
+    {
+        var navigation = Application.Current.MainPage.Navigation;
+        await navigation.PushAsync(new Menu());
     }
 }
 

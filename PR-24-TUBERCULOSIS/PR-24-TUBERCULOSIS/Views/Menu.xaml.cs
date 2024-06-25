@@ -106,12 +106,15 @@ namespace PR_24_TUBERCULOSIS
             SessionManager.UserId = 0;
             SessionManager.rol = null;
 
-            // Animación de desvanecimiento al salir de la página actual
-            await AnimVentanas.FadeOut(this, 250);
-            await Navigation.PopToRootAsync();
+            //// Animación de desvanecimiento al salir de la página actual
+            //await AnimVentanas.FadeOut(this, 250);
+            //await Navigation.PopToRootAsync();
 
-            // Animación de desvanecimiento al entrar en la página de inicio de sesión
-            await AnimVentanas.FadeIn(new LoginPage(), 250);
+            //// Animación de desvanecimiento al entrar en la página de inicio de sesión
+            //await AnimVentanas.FadeIn(new LoginPage(), 250);
+
+            var navigation = Application.Current.MainPage.Navigation;
+            await navigation.PushAsync(new LoginPage());
         }
 
         private async void GeneradorQr_Clicked(object sender, EventArgs e)

@@ -29,9 +29,9 @@ public partial class ListaPacientes : ContentView
     }
     private async Task CargarPacientesAsync()
     {
-        string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+        var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-        using (var conn = new MySqlConnection(connectionString))
+        using (var conn = new MySqlConnection(baseImpl.connectionString))
         {
             await conn.OpenAsync();
 
@@ -84,9 +84,9 @@ public partial class ListaPacientes : ContentView
     }
     private async Task EliminarPacienteAsync(int idPersona)
     {
-        string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+        var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-        using (var conn = new MySqlConnection(connectionString))
+        using (var conn = new MySqlConnection(baseImpl.connectionString))
         {
             await conn.OpenAsync();
 

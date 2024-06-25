@@ -55,12 +55,12 @@ namespace PR_24_TUBERCULOSIS.Implementacion
                C.idControlTratamiento, C.basiloscopia, C.cultivo, C.aumentoDosis, d.genExpert, concat( p.primerNombre,' ', p.primerApellido)
                AS 'Nombre Paciente'
             FROM 
-                tuberculosis.controltratamiento AS C
+                controltratamiento AS C
             JOIN 
-                tuberculosis.diagnostico AS d ON C.Persona_idPersona = d.persona_idPersona
+                diagnostico AS d ON C.Persona_idPersona = d.persona_idPersona
                 JOIN
-                tuberculosis.persona as P ON p.idPersona = c.persona_idPersona
-                WHERE C.persona_idPersona = @idPersona ";
+                persona as P ON p.idPersona = c.persona_idPersona
+                WHERE C.persona_idPersona = @idPersona; ";
             MySqlCommand command = CreateBasicCommand(query);
             command.Parameters.AddWithValue("@idPersona", AtributosPaciente.UserId);
             try

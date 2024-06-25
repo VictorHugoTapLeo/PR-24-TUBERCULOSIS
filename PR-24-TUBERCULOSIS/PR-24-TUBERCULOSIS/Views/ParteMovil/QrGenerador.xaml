@@ -41,5 +41,12 @@
                 Clicked="GenerarQr_Clicked"
                 HorizontalOptions="Center"
                 VerticalOptions="End" />
+        <Button x:Name="Volver"
+        Text="Volver"
+        TextColor="White" 
+        BackgroundColor="#F23456"
+        Clicked="Volver_Clicked"
+        HorizontalOptions="Center"
+        VerticalOptions="End" />
     </VerticalStackLayout>
 </ContentPage>

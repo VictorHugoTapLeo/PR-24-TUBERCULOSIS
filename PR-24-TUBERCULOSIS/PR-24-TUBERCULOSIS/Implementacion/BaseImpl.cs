@@ -14,7 +14,7 @@ namespace PR_24_TUBERCULOSIS.Implementacion
         //"Server=localhost;Database=tuberculosis;User Id=root;Password=vale2004;"
         //string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=vale2004;";
 
-        string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+        public string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
 
 
         public int GetLastPersonID()

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.Maui.Controls;
 using MySql.Data.MySqlClient;
-
+using PR_24_TUBERCULOSIS.Implementacion;
 
 public partial class ListaPreRegistro : ContentView
 {
@@ -24,10 +24,10 @@ public partial class ListaPreRegistro : ContentView
 		}
 		private async Task CargarPacientesAsync()
 		{
-			string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+        var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-			using (var conn = new MySqlConnection(connectionString))
-			{
+        using (var conn = new MySqlConnection(baseImpl.connectionString))
+        {
 				await conn.OpenAsync();
 
 				string sql = "SELECT idPersona, primerNombre, primerApellido FROM persona WHERE estado = 1 AND rol = 'preregistrado'";
@@ -83,10 +83,10 @@ public partial class ListaPreRegistro : ContentView
 		}	
 		private async Task EliminarPacienteAsync(int idPersona)
 		{
-			string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+        var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-			using (var conn = new MySqlConnection(connectionString))
-			{
+        using (var conn = new MySqlConnection(baseImpl.connectionString))
+        {
 				await conn.OpenAsync();
 
 				string sql = "UPDATE persona SET estado = 0 WHERE idPersona = @idPersona";

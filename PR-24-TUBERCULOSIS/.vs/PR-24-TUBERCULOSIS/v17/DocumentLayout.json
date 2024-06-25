@@ -1,18 +1,98 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\victo\\Desktop\\git\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\",
+  "WorkspaceRootPath": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\desktop\\git\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\partemovil\\qrgenerador.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\partemovil\\qrgenerador.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\partemovil\\qrgenerador.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\desktop\\git\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\partemovil\\qrgenerador.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\partemovil\\qrgenerador.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\implementacion\\baseimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\implementacion\\baseimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\desktop\\git\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\crear\\crearpaciente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\crear\\crearpaciente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\listas\\listabasiloscopia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\listas\\listabasiloscopia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\listas\\listaseguimientopeso.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\listas\\listaseguimientopeso.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\listas\\listaseguimientopeso.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\listas\\listaseguimientopeso.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\implementacion\\personalimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\implementacion\\personalimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\paciente\\controltratamiento.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\paciente\\controltratamiento.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\implementacion\\controltratamientoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\implementacion\\controltratamientoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\listas\\listacontroltratmiento.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\listas\\listacontroltratmiento.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\crear\\creardoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\crear\\creardoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\doctor\\updatedoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\doctor\\updatedoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\doctor\\viewdoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\doctor\\viewdoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\vistapersonal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\vistapersonal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\partemovil\\detalleqr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\partemovil\\detalleqr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\partemovil\\scanerqr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\partemovil\\scanerqr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\paciente\\metododiagnostico.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\paciente\\metododiagnostico.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\paciente\\listapreregistro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\paciente\\listapreregistro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\paciente\\listapacientes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\paciente\\listapacientes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\paciente\\controlegreso.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\paciente\\controlegreso.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\listas\\listapaciente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\listas\\listapaciente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\crear\\crearpaciente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\crear\\crearpaciente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|c:\\users\\victo\\downloads\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep 2\\pr-24-tuberculosis-rep\\pr-24-tuberculosis\\pr-24-tuberculosis\\views\\transferencia\\transferencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E478477B-3C17-4D98-B037-4B8D02D0C286}|PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS.csproj|solutionrelative:pr-24-tuberculosis\\views\\transferencia\\transferencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +102,289 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QrGenerador.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\victo\\Desktop\\git\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml.cs",
-              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml.cs",
-              "ToolTip": "C:\\Users\\victo\\Desktop\\git\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml.cs",
-              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T04:25:50.049Z",
+              "DocumentIndex": 2,
+              "Title": "ListaBasiloscopia.xaml",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Listas\\ListaBasiloscopia.xaml",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Listas\\ListaBasiloscopia.xaml",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Listas\\ListaBasiloscopia.xaml",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Listas\\ListaBasiloscopia.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-24T13:06:16.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CrearPaciente.xaml",
-              "DocumentMoniker": "C:\\Users\\victo\\Desktop\\git\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Crear\\CrearPaciente.xaml",
-              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Crear\\CrearPaciente.xaml",
-              "ToolTip": "C:\\Users\\victo\\Desktop\\git\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Crear\\CrearPaciente.xaml",
-              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Crear\\CrearPaciente.xaml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAF4AAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-10T04:23:35.291Z",
+              "DocumentIndex": 3,
+              "Title": "ListaSeguimientoPeso.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Listas\\ListaSeguimientoPeso.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Listas\\ListaSeguimientoPeso.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Listas\\ListaSeguimientoPeso.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Listas\\ListaSeguimientoPeso.xaml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwC4AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T00:49:48.059Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonalImpl.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Implementacion\\PersonalImpl.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Implementacion\\PersonalImpl.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Implementacion\\PersonalImpl.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Implementacion\\PersonalImpl.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAArwJMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T23:43:37.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VistaPersonal.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\VistaPersonal.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\VistaPersonal.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\VistaPersonal.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\VistaPersonal.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T23:43:27.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ControlTratamiento.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Paciente\\ControlTratamiento.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Paciente\\ControlTratamiento.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Paciente\\ControlTratamiento.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Paciente\\ControlTratamiento.xaml.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAqwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:25:30.849Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "QrGenerador.xaml",
-              "DocumentMoniker": "C:\\Users\\victo\\Desktop\\git\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml",
-              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml",
-              "ToolTip": "C:\\Users\\victo\\Desktop\\git\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml",
-              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-10T04:22:38.695Z",
+              "Title": "BaseImpl.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Implementacion\\BaseImpl.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Implementacion\\BaseImpl.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Implementacion\\BaseImpl.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Implementacion\\BaseImpl.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAwBAAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:14:49.668Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QrGenerador.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\ParteMovil\\QrGenerador.xaml.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACQAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:27:27.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListaSeguimientoPeso.xaml",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Listas\\ListaSeguimientoPeso.xaml",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Listas\\ListaSeguimientoPeso.xaml",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Listas\\ListaSeguimientoPeso.xaml",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Listas\\ListaSeguimientoPeso.xaml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACsAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-24T00:48:49.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Menu.xaml",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Menu.xaml",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Menu.xaml",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Menu.xaml",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Menu.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAACAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-23T00:24:17.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ControlTratamientoImpl.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Implementacion\\ControlTratamientoImpl.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Implementacion\\ControlTratamientoImpl.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Implementacion\\ControlTratamientoImpl.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Implementacion\\ControlTratamientoImpl.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAD4AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:28:37.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListaControlTratmiento.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Listas\\ListaControlTratmiento.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Listas\\ListaControlTratmiento.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Listas\\ListaControlTratmiento.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Listas\\ListaControlTratmiento.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T00:58:26.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CrearDoctor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Crear\\CrearDoctor.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Crear\\CrearDoctor.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Crear\\CrearDoctor.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Crear\\CrearDoctor.xaml.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAJoAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T00:19:38.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateDoctor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Doctor\\UpdateDoctor.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Doctor\\UpdateDoctor.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Doctor\\UpdateDoctor.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Doctor\\UpdateDoctor.xaml.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAqwFgAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T23:45:39.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ViewDoctor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Doctor\\ViewDoctor.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Doctor\\ViewDoctor.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Doctor\\ViewDoctor.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Doctor\\ViewDoctor.xaml.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAqwFkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T00:24:37.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DetalleQr.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\ParteMovil\\DetalleQr.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\ParteMovil\\DetalleQr.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\ParteMovil\\DetalleQr.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\ParteMovil\\DetalleQr.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:28:12.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ScanerQr.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\ParteMovil\\ScanerQr.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\ParteMovil\\ScanerQr.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\ParteMovil\\ScanerQr.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\ParteMovil\\ScanerQr.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:28:08.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MetodoDiagnostico.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Paciente\\MetodoDiagnostico.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Paciente\\MetodoDiagnostico.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Paciente\\MetodoDiagnostico.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Paciente\\MetodoDiagnostico.xaml.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADYAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:26:46.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ListaPreRegistro.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Paciente\\ListaPreRegistro.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Paciente\\ListaPreRegistro.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Paciente\\ListaPreRegistro.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Paciente\\ListaPreRegistro.xaml.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAkwFcAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:26:15.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ListaPacientes.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Paciente\\ListaPacientes.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Paciente\\ListaPacientes.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Paciente\\ListaPacientes.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Paciente\\ListaPacientes.xaml.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAAAFgAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:25:43.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ControlEgreso.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Paciente\\ControlEgreso.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Paciente\\ControlEgreso.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Paciente\\ControlEgreso.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Paciente\\ControlEgreso.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:25:10.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ListaPaciente.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Listas\\ListaPaciente.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Listas\\ListaPaciente.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Listas\\ListaPaciente.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Listas\\ListaPaciente.xaml.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:24:49.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CrearPaciente.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Crear\\CrearPaciente.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Crear\\CrearPaciente.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Crear\\CrearPaciente.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Crear\\CrearPaciente.xaml.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAowLsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:23:49.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Transferencia.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Transferencia\\Transferencia.xaml.cs",
+              "RelativeDocumentMoniker": "PR-24-TUBERCULOSIS\\Views\\Transferencia\\Transferencia.xaml.cs",
+              "ToolTip": "C:\\Users\\victo\\Downloads\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP 2\\PR-24-TUBERCULOSIS-REP\\PR-24-TUBERCULOSIS\\PR-24-TUBERCULOSIS\\Views\\Transferencia\\Transferencia.xaml.cs",
+              "RelativeToolTip": "PR-24-TUBERCULOSIS\\Views\\Transferencia\\Transferencia.xaml.cs",
+              "ViewState": "AQIAAIYBAAAAAAAAAAAAAGUBAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T01:17:51.122Z"
             }
           ]
         }

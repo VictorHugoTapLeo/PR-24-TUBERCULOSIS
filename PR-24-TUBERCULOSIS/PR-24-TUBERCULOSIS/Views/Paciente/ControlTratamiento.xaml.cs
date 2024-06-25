@@ -2,21 +2,21 @@ namespace PR_24_TUBERCULOSIS.Views.Paciente;
 using PR_24_TUBERCULOSIS.Implementacion;
 using PR_24_TUBERCULOSIS.Model;
 using PR_24_TUBERCULOSIS.Views.Listas;
+
 public partial class ControlTratamiento : ContentPage
 {
-	public ControlTratamiento()
-	{
-		InitializeComponent();
+    public ControlTratamiento()
+    {
+        InitializeComponent();
         LoadGenexpertData(AtributosPaciente.UserId);
     }
+
     private void LoadGenexpertData(int personaId)
     {
         try
         {
             var controlTratamientoImpl = new ControlTratamientoImpl();
             string genexpertValue = controlTratamientoImpl.GetGenexpertForPersona(personaId);
-
-
             txtGenexpert.Text = genexpertValue;
         }
         catch (Exception ex)
@@ -25,37 +25,56 @@ public partial class ControlTratamiento : ContentPage
         }
     }
 
-
-
     private async void OnRegistrarClicked(object sender, EventArgs e)
     {
         try
         {
+            if (pickerBasiloscopia.SelectedItem == null)
+            {
+                await DisplayAlert("Error", "Por favor, selecciona una opción de Basiloscopia.", "OK");
+                return;
+            }
+
+            if (pickerCultivo.SelectedItem == null)
+            {
+                await DisplayAlert("Error", "Por favor, selecciona una opción de Cultivo.", "OK");
+                return;
+            }
+
+            if (pickerAumentoDosis.SelectedItem == null)
+            {
+                await DisplayAlert("Error", "Por favor, selecciona una opción de Aumento de Dosis.", "OK");
+                return;
+            }
+
+            if (pickerNumeroBasiloscopia.SelectedIndex == -1)
+            {
+                await DisplayAlert("Error", "Por favor, selecciona un número de Basiloscopia.", "OK");
+                return;
+            }
+
             string basiloscopia = pickerBasiloscopia.SelectedItem.ToString();
             string cultivo = pickerCultivo.SelectedItem.ToString();
             string aumentoDosis = pickerAumentoDosis.SelectedItem.ToString();
-            // int personaIdPersona = 14; 
             int ordenIdOrden = pickerNumeroBasiloscopia.SelectedIndex + 1;
 
             var controlTratamiento = new ClControlTratamiento(0, basiloscopia, cultivo, aumentoDosis, 14, ordenIdOrden);
-
             var controlTratamientoImpl = new ControlTratamientoImpl();
             int result = controlTratamientoImpl.Insert(controlTratamiento);
 
             if (result > 0)
             {
-                DisplayAlert("Éxito", "Control de tratamiento registrado correctamente", "OK");
+                await DisplayAlert("Éxito", "Control de tratamiento registrado correctamente", "OK");
             }
             else
             {
-                DisplayAlert("Error", "Hubo un problema al registrar el control de tratamiento", "OK");
+                await DisplayAlert("Error", "Hubo un problema al registrar el control de tratamiento", "OK");
             }
         }
         catch (Exception ex)
         {
-            DisplayAlert("Error", $"Ocurrió un error: {ex.Message}", "OK");
+            await DisplayAlert("Error", $"Ocurrió un error: {ex.Message}", "OK");
         }
-
 
         await Navigation.PushAsync(new ListaControlTratmiento());
     }
@@ -66,4 +85,3 @@ public partial class ControlTratamiento : ContentPage
         await navigation.PushAsync(new MenuActividades());
     }
 }
-

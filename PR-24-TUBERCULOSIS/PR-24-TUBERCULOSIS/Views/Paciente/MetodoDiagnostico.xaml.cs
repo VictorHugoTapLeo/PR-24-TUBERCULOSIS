@@ -2,7 +2,9 @@ namespace PR_24_TUBERCULOSIS.Views.Paciente;
 using System;
 using System.Data;
 using Microsoft.Maui.Controls;
-using MySql.Data.MySqlClient;	
+using MySql.Data.MySqlClient;
+using PR_24_TUBERCULOSIS.Implementacion;
+
 public partial class MetodoDiagnostico : ContentPage
 {
     private int pacienteId;
@@ -17,9 +19,9 @@ public partial class MetodoDiagnostico : ContentPage
     {
         // Aquí puedes cargar los datos del paciente usando el ID proporcionado
         // Por ejemplo, obtener el peso inicial del paciente desde la base de datos
-        string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
+        var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
 
-        using (var conn = new MySqlConnection(connectionString))
+        using (var conn = new MySqlConnection(baseImpl.connectionString))
         {
             await conn.OpenAsync();
             string sql = "SELECT pesoInicial FROM paciente WHERE idPaciente = @idPaciente";
@@ -39,17 +41,32 @@ public partial class MetodoDiagnostico : ContentPage
     }
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        await InsertarDatosAsync();
-        await Navigation.PushAsync(new NavigationPage(new ContentPage { Content = new ListaPacientes() }));
-    }
+		string campoInvalido;
+
+		// Validar los campos antes de proceder
+		if (CamposSonValidos(out campoInvalido))
+		{
+			// Si los campos son válidos, procede a insertar los datos
+			await InsertarDatosAsync();
+
+			// Navegar a la lista de pacientes después de la inserción exitosa
+			await Navigation.PushAsync(new NavigationPage(new ContentPage { Content = new ListaPacientes() }));
+		}
+		else
+		{
+			// Mostrar mensaje de error indicando el campo inválido
+			await DisplayAlert("Error", $"Campo inválido: {campoInvalido}", "OK");
+		}
+	}
     private async void btnCancelar_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new NavigationPage(new ContentPage { Content = new ListaPreRegistro() }));
     }
     private async Task InsertarDatosAsync()
     {
-        string connectionString = @"Server=localhost;Database=tuberculosis;User Id=root;Password=1860;";
-        using (var conn = new MySqlConnection(connectionString))
+        var baseImpl = new BaseImpl(); // Crear una instancia de la clase BaseImpl
+
+        using (var conn = new MySqlConnection(baseImpl.connectionString))
         {
             await conn.OpenAsync();
             var transaction = await conn.BeginTransactionAsync();
@@ -88,5 +105,89 @@ public partial class MetodoDiagnostico : ContentPage
         }
     }
 
+	private bool EsBaciloscopiaValida(out string campoInvalido)
+	{
+		campoInvalido = string.Empty;
+
+		// Verificar si se ha seleccionado una opción válida en el Picker de Baciloscopia
+		if (BaciloscopiaPicker.SelectedIndex == -1)
+		{
+			campoInvalido = "Debe seleccionar una opción para Baciloscopia.";
+			return false;
+		}
+
+		return true;
+	}
+	private bool EsCultivoValido(out string campoInvalido)
+	{
+		campoInvalido = string.Empty;
+
+		// Verificar si se ha seleccionado una opción válida en el Picker de Cultivo
+		if (CultivoPicker.SelectedIndex == -1)
+		{
+			campoInvalido = "Debe seleccionar una opción para Cultivo.";
+			return false;
+		}
+
+		return true;
+	}
+	private bool EsClinicoValido(out string campoInvalido)
+	{
+		campoInvalido = string.Empty;
+
+		// Verificar si el campo Clínico no está vacío
+		if (string.IsNullOrWhiteSpace(ClinicoEntry.Text))
+		{
+			campoInvalido = "Debe ingresar el valor para Clínico.";
+			return false;
+		}
+
+		return true;
+	}
+	private bool EsGenexpertValido(out string campoInvalido)
+	{
+		campoInvalido = string.Empty;
+
+		// Verificar si se ha seleccionado una opción válida en el Picker de Genexpert
+		if (GenexpertPicker.SelectedIndex == -1)
+		{
+			campoInvalido = "Debe seleccionar una opción para Genexpert.";
+			return false;
+		}
+
+		return true;
+	}
+	private bool CamposSonValidos(out string campoInvalido)
+	{
+		campoInvalido = string.Empty;
+
+		// Validar Baciloscopia
+		if (!EsBaciloscopiaValida(out campoInvalido))
+		{
+			return false;
+		}
+
+		// Validar Cultivo
+		if (!EsCultivoValido(out campoInvalido))
+		{
+			return false;
+		}
+
+		// Validar Clínico
+		if (!EsClinicoValido(out campoInvalido))
+		{
+			return false;
+		}
+
+		// Validar Genexpert
+		if (!EsGenexpertValido(out campoInvalido))
+		{
+			return false;
+		}
+
+		// Puedes agregar más validaciones aquí si es necesario
+
+		return true;
+	}
 
 }
